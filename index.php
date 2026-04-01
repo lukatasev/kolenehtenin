@@ -1,0 +1,33 @@
+<?php
+require_once "Art/Load.php";
+
+$route->get("index", "home");
+$route->get("/home", "home");
+$route->get("/about", "about");
+$route->get("/programs", "programs");
+$route->get("/news", "news");
+$route->get("/contact", "contact");
+
+$page = $route->render_url($_SERVER["REQUEST_URI"], $GLOBALS);
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss"><?php echo file_get_contents("assets/css/theme.css"); ?></style>
+
+    <title>ДСУ РЦСОО „Коле Нехтенин“ - Штип</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body class="bg-surface text-onSurface scroll-smooth">
+    <?php echo $page; ?>
+</body>
+</html>

@@ -1,0 +1,25 @@
+@theme {
+    --color-primary: #456731;
+    --color-primaryContainer: #c6eeaa;
+    --color-onPrimary: #082100;
+
+    --color-secondary: #55624c;
+    --color-secondaryContainer: #d9e7ca;
+    --color-onSecondary: #141f0d;
+
+    --color-tertiary: #386666;
+    --color-tertiaryContainer: #bbebeb;
+    --color-onTertiary: #002020;
+
+    --color-surface: #f8faf0;
+    --color-surfaceContainer: #edefe4;
+    --color-onSurface: #191d16;
+
+    --font-sans: "Inter", sans-serif;
+    --font-serif: "Inter", serif;
+    --font-mono: monospace;
+}
+
+:root {
+    scroll-behavior: smooth;
+}
