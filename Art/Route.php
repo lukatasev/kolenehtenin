@@ -22,6 +22,7 @@ class Route {
     * Returns the page from a $url, also sets arguments in the $arg variable
     */
     public function from(String $url) {
+        $url = explode("?", $url)[0];
         $link = $this->get;
         global $arg;
 

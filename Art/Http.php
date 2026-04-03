@@ -102,12 +102,6 @@ class HttpHelper {
         $response = new HttpHelperResponse($this);
         return $response->body();
     }
-
-    public function response_headers() {
-        $response = new HttpHelperResponse($this);
-        return $response->headers();
-    }
-
     public function response() {
         $response = new HttpHelperResponse($this);
         return $response;
@@ -115,11 +109,6 @@ class HttpHelper {
     public function res() {
         $response = new HttpHelperResponse($this);
         return $response;
-    }
-
-    public function curl() {
-        $response = new HttpHelperResponse($this);
-        return $response->curl_exec();
     }
     
 }
@@ -159,36 +148,11 @@ class HttpHelperResponse {
         return $context;
     }
 
-    private function curl_init() {
-        $headers = [];
-        foreach($this->helper->headers as $k => $v) {
-            array_push($headers, "$k: $v");
-        }
-
-        $curl = curl_init();
-        curl_setopt_array($curl, [
-            CURLOPT_URL => $this->helper->url,
-            CURLOPT_RETURNTRANSFER => true,
-            CURLOPT_ENCODING => "",
-            CURLOPT_MAXREDIRS => $this->helper->max_redirects,
-            CURLOPT_TIMEOUT => $this->helper->timeout,
-            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-            CURLOPT_CUSTOMREQUEST => $this->helper->method,
-            CURLOPT_POSTFIELDS => $this->helper->content,
-            CURLOPT_HTTPHEADER => $headers,
-        ]);
-
-        return $curl;
-    }
-
     public function body() {
         return file_get_contents($this->helper->url, false, $this->create_context());
     }
     public function headers() {
         return get_headers($this->helper->url, true, $this->create_context());
-    }
-    public function curl_exec() {
-        return curl_exec($this->curl_init());
     }
 
 }

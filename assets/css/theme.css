@@ -1,25 +1,38 @@
 @theme {
-    --color-primary: #456731;
-    --color-primaryContainer: #c6eeaa;
-    --color-onPrimary: #082100;
+    --color-primary: #3a5a28;
+    --color-primaryContainer: #e8f0e0;
+    --color-onPrimary: #ffffff;
 
-    --color-secondary: #55624c;
-    --color-secondaryContainer: #d9e7ca;
-    --color-onSecondary: #141f0d;
+    --color-secondary: #5a5247;
+    --color-secondaryContainer: #eae6df;
+    --color-onSecondary: #1a1815;
 
-    --color-tertiary: #386666;
-    --color-tertiaryContainer: #bbebeb;
-    --color-onTertiary: #002020;
+    --color-tertiary: #4a5e5e;
+    --color-tertiaryContainer: #dde6e6;
+    --color-onTertiary: #0f1a1a;
 
-    --color-surface: #f8faf0;
-    --color-surfaceContainer: #edefe4;
-    --color-onSurface: #191d16;
+    --color-surface: #ffffff;
+    --color-surfaceContainer: #f0eeeb;
+    --color-onSurface: #1a1a1a;
 
-    --font-sans: "Inter", sans-serif;
+    --font-sans: "Inter", system-ui, sans-serif;
     --font-serif: "Inter", serif;
     --font-mono: monospace;
 }
 
 :root {
     scroll-behavior: smooth;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+details summary::-webkit-details-marker {
+    display: none;
+}
+
+details summary::marker {
+    display: none;
 }

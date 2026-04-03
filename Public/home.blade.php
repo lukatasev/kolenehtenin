@@ -1,134 +1,107 @@
 @include('partials.header')
 
-<main class="w-full flex-grow flex flex-col">
-    <!-- Hero Section -->
-    <section class="py-20 px-6 max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12 w-full">
-        <div class="flex-1 space-y-6">
-            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surfaceContainer border border-surfaceContainer text-onSurface text-xs font-semibold tracking-wide">
-                <span class="material-symbols-outlined text-[16px]">school</span>
-                ДСУ РЦСОО „Коле Нехтенин“ - Штип
-            </div>
-            <h2 class="text-4xl md:text-6xl font-black text-onSurface leading-tight tracking-tight">
-                Вашата струка.<br>
-                <span class="text-primary">Вашата иднина.</span>
-            </h2>
-            <p class="text-lg text-onSurface/70 max-w-lg leading-relaxed">
-                Регионален центар за стручно образование и обука. Истражете ги можностите, усовршете ги своите вештини и бидете дел од успехот.
-            </p>
-            <div class="pt-4 flex flex-wrap gap-4">
-                <a href="/programs" class="inline-flex items-center gap-2 px-6 py-3 bg-primary text-onPrimary font-semibold rounded-xl hover:opacity-90 transition-opacity">
-                    Истражи насоки
-                    <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
-                </a>
-                <a href="/about" class="inline-flex items-center gap-2 px-6 py-3 bg-surfaceContainer text-onSurface font-semibold rounded-xl hover:bg-surfaceContainer/80 transition-colors">
-                    Повеќе за нас
-                </a>
-            </div>
-        </div>
-        
-        <!-- Hero Visual (Clean and Structured) -->
-        <div class="flex-1 w-full bg-surface border border-surfaceContainer rounded-3xl overflow-hidden shadow-sm flex flex-col relative min-h-[350px]">
-            <!-- Top cover image placeholder -->
-            <div class="h-48 bg-surfaceContainer w-full flex items-center justify-center">
-                <span class="material-symbols-outlined text-onSurface/20 text-[80px]">domain</span>
-            </div>
-            <!-- School Context Meta -->
-            <div class="p-6 bg-surface flex flex-col gap-3 relative">
-                <div class="absolute -top-10 left-6 w-20 h-20 bg-surface rounded-2xl p-2 shadow-sm border border-surfaceContainer flex items-center justify-center">
-                    <img src="/assets/images/logo.jpg" alt="Logo" class="w-full h-full object-contain rounded-xl">
+<main class="w-full flex-grow">
+    <!-- Hero -->
+    <section class="border-b border-surfaceContainer">
+        <div class="max-w-5xl mx-auto px-6 py-16 md:py-20">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <h2 class="text-3xl md:text-4xl font-semibold text-onSurface leading-tight">
+                        ДСУ РЦСОО „Коле Нехтенин" - Штип
+                    </h2>
+                    <p class="text-base text-onSurface/70 leading-relaxed max-w-md">
+                        Регионален центар за стручно образование и обука. Создаваме кадри кои го движат општеството напред преку практична настава и дуално образование.
+                    </p>
+                    <div class="flex gap-4 pt-2">
+                        <a href="/programs" class="inline-flex items-center px-6 py-2.5 bg-primary text-onPrimary text-sm font-medium rounded-sm hover:opacity-90 transition-opacity">
+                            Погледни насоки
+                        </a>
+                        <a href="/about" class="inline-flex items-center px-6 py-2.5 border border-surfaceContainer text-onSurface text-sm font-medium rounded-sm hover:bg-surfaceContainer transition-colors">
+                            За нас
+                        </a>
+                    </div>
                 </div>
-                <div class="pt-10 flex flex-col gap-1">
-                    <h3 class="font-bold text-lg leading-tight">60 Години Традиција</h3>
-                    <p class="text-sm text-onSurface/70">Создаваме кадри кои го движат општеството напред преку практична настава и дуално образование.</p>
+                
+                <div class="w-full">
+                    <img src="/assets/images/school_photo1.jpg" alt="Училишна зграда" class="w-full h-72 md:h-80 object-cover rounded-sm">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Info Banner -->
-    <section class="border-y border-surfaceContainer bg-surfaceContainer/20 py-10 px-6">
-        <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8">
-            <div class="flex flex-col gap-2">
-                <span class="material-symbols-outlined text-primary text-3xl">history_edu</span>
-                <h4 class="font-bold text-onSurface text-lg">60+ Години</h4>
-                <p class="text-onSurface/60 text-sm">Традиција и квалитет</p>
-            </div>
-            <div class="flex flex-col gap-2">
-                <span class="material-symbols-outlined text-primary text-3xl">groups</span>
-                <h4 class="font-bold text-onSurface text-lg">800 Ученици</h4>
-                <p class="text-onSurface/60 text-sm">Во 28 паралелки</p>
-            </div>
-            <div class="flex flex-col gap-2">
-                <span class="material-symbols-outlined text-primary text-3xl">work</span>
-                <h4 class="font-bold text-onSurface text-lg">Дуално</h4>
-                <p class="text-onSurface/60 text-sm">Вработување по завршување</p>
-            </div>
-            <div class="flex flex-col gap-2">
-                <span class="material-symbols-outlined text-primary text-3xl">emoji_events</span>
-                <h4 class="font-bold text-onSurface text-lg">Награди</h4>
-                <p class="text-onSurface/60 text-sm">Државни признанија</p>
+    <!-- Stats -->
+    <section class="border-b border-surfaceContainer bg-surfaceContainer/40">
+        <div class="max-w-5xl mx-auto px-6 py-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div>
+                    <p class="text-2xl font-semibold text-onSurface">60+</p>
+                    <p class="text-sm text-onSurface/50 mt-1">Години традиција</p>
+                </div>
+                <div>
+                    <p class="text-2xl font-semibold text-onSurface">800</p>
+                    <p class="text-sm text-onSurface/50 mt-1">Ученици во 28 паралелки</p>
+                </div>
+                <div>
+                    <p class="text-2xl font-semibold text-onSurface">10</p>
+                    <p class="text-sm text-onSurface/50 mt-1">Стручни профили</p>
+                </div>
+                <div>
+                    <p class="text-2xl font-semibold text-onSurface">Дуално</p>
+                    <p class="text-sm text-onSurface/50 mt-1">Образование</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Programs Overview -->
-    <section class="py-20 px-6 max-w-6xl mx-auto w-full">
+    <!-- Programs -->
+    <section class="py-16 px-6 max-w-5xl mx-auto">
         <div class="flex items-end justify-between mb-10">
             <div>
-                <h2 class="text-3xl font-bold text-onSurface mb-2">Нашите Струки</h2>
-                <p class="text-onSurface/60">Модерен пристап и практична настава.</p>
+                <h2 class="text-xl font-semibold text-onSurface">Стручни Насоки</h2>
+                <p class="text-sm text-onSurface/50 mt-1">Модерен пристап и практична настава.</p>
             </div>
-            <a href="/programs" class="hidden md:flex items-center gap-2 text-sm font-semibold text-primary hover:underline">
-                Види ги сите <span class="material-symbols-outlined text-[18px]">east</span>
+            <a href="/programs" class="hidden md:flex items-center gap-1 text-sm text-primary hover:underline">
+                Види ги сите &rarr;
             </a>
         </div>
         
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <!-- Program Card -->
-            <a href="/programs" class="group flex flex-col bg-surface border border-surfaceContainer rounded-2xl p-6 hover:shadow-lg hover:border-primary/30 transition-all">
-                <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                    <span class="material-symbols-outlined text-primary">bolt</span>
-                </div>
-                <h3 class="text-xl font-bold text-onSurface mb-3">Електротехничка</h3>
-                <p class="text-sm text-onSurface/70 flex-grow mb-6">
+            <a href="/programs" class="group flex flex-col bg-surface border border-surfaceContainer p-6 hover:border-primary/40 transition-colors">
+                <h3 class="text-base font-semibold text-onSurface mb-2">Електротехничка</h3>
+                <p class="text-sm text-onSurface/60 flex-grow mb-4 leading-relaxed">
                     Електротехничар за компјутерска техника, енергетичар и телекомуникации.
                 </p>
-                <div class="text-xs font-bold text-primary flex items-center gap-1">
-                    <span class="material-symbols-outlined text-[16px]">list</span> 3 Профили
-                </div>
+                <span class="text-xs text-primary">3 Профили</span>
             </a>
 
-            <!-- Program Card -->
-            <a href="/programs" class="group flex flex-col bg-surface border border-surfaceContainer rounded-2xl p-6 hover:shadow-lg hover:border-primary/30 transition-all">
-                <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                    <span class="material-symbols-outlined text-primary">precision_manufacturing</span>
-                </div>
-                <h3 class="text-xl font-bold text-onSurface mb-3">Машинска</h3>
-                <p class="text-sm text-onSurface/70 flex-grow mb-6">
+            <a href="/programs" class="group flex flex-col bg-surface border border-surfaceContainer p-6 hover:border-primary/40 transition-colors">
+                <h3 class="text-base font-semibold text-onSurface mb-2">Машинска</h3>
+                <p class="text-sm text-onSurface/60 flex-grow mb-4 leading-relaxed">
                     Техничар за компјутерско управување (CNC), мехатроника, заварување и машинство.
                 </p>
-                <div class="text-xs font-bold text-primary flex items-center gap-1">
-                    <span class="material-symbols-outlined text-[16px]">list</span> 5 Профили
-                </div>
+                <span class="text-xs text-primary">6 Профили</span>
             </a>
 
-            <!-- Program Card -->
-            <a href="/programs" class="group flex flex-col bg-surface border border-surfaceContainer rounded-2xl p-6 hover:shadow-lg hover:border-primary/30 transition-all">
-                <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                    <span class="material-symbols-outlined text-primary">restaurant_menu</span>
-                </div>
-                <h3 class="text-xl font-bold text-onSurface mb-3">Угостителска</h3>
-                <p class="text-sm text-onSurface/70 flex-grow mb-6">
+            <a href="/programs" class="group flex flex-col bg-surface border border-surfaceContainer p-6 hover:border-primary/40 transition-colors">
+                <h3 class="text-base font-semibold text-onSurface mb-2">Угостителска</h3>
+                <p class="text-sm text-onSurface/60 flex-grow mb-4 leading-relaxed">
                     Врвно угостителство преку практика во реномирани објекти за Келнер-готвач.
                 </p>
-                <div class="text-xs font-bold text-primary flex items-center gap-1">
-                    <span class="material-symbols-outlined text-[16px]">list</span> 1 Профил
-                </div>
+                <span class="text-xs text-primary">1 Профил</span>
             </a>
         </div>
-        <a href="/programs" class="md:hidden mt-6 flex items-center justify-center gap-2 text-sm font-semibold text-primary">
-            Види ги сите <span class="material-symbols-outlined text-[18px]">east</span>
+        <a href="/programs" class="md:hidden mt-6 flex items-center justify-center gap-1 text-sm text-primary">
+            Види ги сите &rarr;
         </a>
+    </section>
+
+    <!-- School Gallery -->
+    <section class="border-t border-surfaceContainer py-16 px-6 max-w-5xl mx-auto">
+        <h2 class="text-xl font-semibold text-onSurface mb-8">Галерија</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <img src="/assets/images/school_photo1.jpg" alt="Училиште" class="w-full h-60 object-cover rounded-sm">
+            <img src="/assets/images/school_photo2.jpg" alt="Училиште" class="w-full h-60 object-cover rounded-sm">
+        </div>
     </section>
 
 </main>
