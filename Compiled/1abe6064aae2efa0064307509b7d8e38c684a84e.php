@@ -30,11 +30,11 @@
  
  <details class="border border-surfaceContainer group">
  <summary class="p-5 cursor-pointer flex items-center justify-between text-onSurface hover:bg-surfaceContainer/30 transition-colors">
- <div class="flex flex-col gap-1 flex-grow">
+ <div class="flex flex-col gap-3 flex-grow">
  <span class="text-base font-medium">Електротехничар за компјутерска техника и автоматика</span>
- <div class="flex flex-wrap gap-2 text-xs text-onSurface/50">
- <span>4 години</span>
- <span>Мин. 60 поени</span>
+ <div class="flex flex-wrap gap-2">
+ <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm">4 години</span>
+ <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-sm">Мин. 60 поени</span>
  </div>
  </div>
  <span class="text-onSurface/40 group-open:rotate-180 transition-transform text-sm">&darr;</span>
@@ -54,21 +54,21 @@
  <li>да ги процени можните и најисплатливите економски поправки во зависност од желбата на корисникот;</li>
  <li>да ги планира и организира работните задачи;</li>
  </ul>
- <div class="mt-4 flex flex-wrap gap-4 text-xs text-onSurface/40 bg-surfaceContainer/30 p-3">
- <span>Број на ученици: 68</span>
- <span>Број на паралелки: 2</span>
+ <div class="mt-4 flex flex-wrap gap-2">
+ <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm">68 ученици</span>
+ <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm">2 паралелки</span>
  </div>
  </div>
  </details>
 
  <details class="border border-surfaceContainer group">
  <summary class="p-5 cursor-pointer flex items-center justify-between text-onSurface hover:bg-surfaceContainer/30 transition-colors">
- <div class="flex flex-col gap-1 flex-grow">
+ <div class="flex flex-col gap-3 flex-grow">
  <span class="text-base font-medium">Електротехничар &ndash; енергетичар</span>
- <div class="flex flex-wrap gap-2 text-xs text-onSurface/50">
- <span>4 години</span>
- <span>Мин. 45 поени</span>
- <span class="text-primary font-medium">Дуална паралелка</span>
+ <div class="flex flex-wrap gap-2">
+ <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm">4 години</span>
+ <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-sm">Мин. 45 поени</span>
+ <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-sm">Дуална паралелка</span>
  </div>
  </div>
  <span class="text-onSurface/40 group-open:rotate-180 transition-transform text-sm">&darr;</span>
@@ -90,20 +90,20 @@
  <li>да води мал бизнис;</li>
  </ul>
  <p class="mt-3 text-xs text-onSurface/50">Во соработка со компании: ТМ ДОО, ЈП Хидросистем Злетовица-Пробиштип, ЈОЛЕ ДООЕЛ Штип, Дрводекот &ndash; Ентериер, Електродистрибуција ДООЕЛ, ЗДВИЛ ЛИОН ДОО</p>
- <div class="mt-4 flex flex-wrap gap-4 text-xs text-onSurface/40 bg-surfaceContainer/30 p-3">
- <span>Број на ученици: 25</span>
- <span>Број на паралелки: 1</span>
+ <div class="mt-4 flex flex-wrap gap-2">
+ <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm">25 ученици</span>
+ <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm">1 паралелка</span>
  </div>
  </div>
  </details>
 
  <details class="border border-surfaceContainer group">
  <summary class="p-5 cursor-pointer flex items-center justify-between text-onSurface hover:bg-surfaceContainer/30 transition-colors">
- <div class="flex flex-col gap-1 flex-grow">
+ <div class="flex flex-col gap-3 flex-grow">
  <span class="text-base font-medium">Електротехничар за електроника и телекомуникации</span>
- <div class="flex flex-wrap gap-2 text-xs text-onSurface/50">
- <span>4 години</span>
- <span>Мин. 50 поени</span>
+ <div class="flex flex-wrap gap-2">
+ <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm">4 години</span>
+ <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-sm">Мин. 50 поени</span>
  </div>
  </div>
  <span class="text-onSurface/40 group-open:rotate-180 transition-transform text-sm">&darr;</span>
@@ -120,9 +120,9 @@
  <li>да врши мерења и користи инструменти;</li>
  <li>да користи наменски програмски пакети;</li>
  </ul>
- <div class="mt-4 flex flex-wrap gap-4 text-xs text-onSurface/40 bg-surfaceContainer/30 p-3">
- <span>Број на ученици: 34</span>
- <span>Број на паралелки: 1</span>
+ <div class="mt-4 flex flex-wrap gap-2">
+ <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm">34 ученици</span>
+ <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm">1 паралелка</span>
  </div>
  </div>
  </details>
@@ -134,12 +134,12 @@
  
  <details class="border border-surfaceContainer group">
  <summary class="p-5 cursor-pointer flex items-center justify-between text-onSurface hover:bg-surfaceContainer/30 transition-colors">
- <div class="flex flex-col gap-1 flex-grow">
+ <div class="flex flex-col gap-3 flex-grow">
  <span class="text-base font-medium">Техничар за компјутерско управување / Машински техничар</span>
- <div class="flex flex-wrap gap-2 text-xs text-onSurface/50">
- <span>4 години</span>
- <span>Мин. 45 поени</span>
- <span class="text-primary font-medium">Дуална паралелка</span>
+ <div class="flex flex-wrap gap-2">
+ <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm">4 години</span>
+ <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-sm">Мин. 45 поени</span>
+ <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-sm">Дуална паралелка</span>
  </div>
  </div>
  <span class="text-onSurface/40 group-open:rotate-180 transition-transform text-sm">&darr;</span>
@@ -159,20 +159,20 @@
  <li>да се грижи за заштита на животната средина;</li>
  </ul>
  <p class="mt-3 text-xs text-onSurface/50">Во соработка со компании: ТМ ДОО, АКТИВА ДОО</p>
- <div class="mt-4 flex flex-wrap gap-4 text-xs text-onSurface/40 bg-surfaceContainer/30 p-3">
- <span>Број на ученици: 25</span>
- <span>Број на паралелки: 1</span>
+ <div class="mt-4 flex flex-wrap gap-2">
+ <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm">25 ученици</span>
+ <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm">1 паралелка</span>
  </div>
  </div>
  </details>
 
  <details class="border border-surfaceContainer group">
  <summary class="p-5 cursor-pointer flex items-center justify-between text-onSurface hover:bg-surfaceContainer/30 transition-colors">
- <div class="flex flex-col gap-1 flex-grow">
+ <div class="flex flex-col gap-3 flex-grow">
  <span class="text-base font-medium">Машински техничар за моторни возила / Машинско-енергетски техничар</span>
- <div class="flex flex-wrap gap-2 text-xs text-onSurface/50">
- <span>4 години</span>
- <span>Мин. 45 поени</span>
+ <div class="flex flex-wrap gap-2">
+ <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm">4 години</span>
+ <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-sm">Мин. 45 поени</span>
  </div>
  </div>
  <span class="text-onSurface/40 group-open:rotate-180 transition-transform text-sm">&darr;</span>
@@ -189,20 +189,20 @@
  <li>да ја контролира исправноста на машините, алатите и точноста на габаритите на машинските елементи;</li>
  <li>да монтира машински елементи;</li>
  </ul>
- <div class="mt-4 flex flex-wrap gap-4 text-xs text-onSurface/40 bg-surfaceContainer/30 p-3">
- <span>Број на ученици: 34</span>
- <span>Број на паралелки: 1</span>
+ <div class="mt-4 flex flex-wrap gap-2">
+ <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm">34 ученици</span>
+ <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm">1 паралелка</span>
  </div>
  </div>
  </details>
 
  <details class="border border-surfaceContainer group">
  <summary class="p-5 cursor-pointer flex items-center justify-between text-onSurface hover:bg-surfaceContainer/30 transition-colors">
- <div class="flex flex-col gap-1 flex-grow">
+ <div class="flex flex-col gap-3 flex-grow">
  <span class="text-base font-medium">Машински механичар / Конструкциски механичар</span>
- <div class="flex flex-wrap gap-2 text-xs text-onSurface/50">
- <span>3 години</span>
- <span>Мин. 30 поени</span>
+ <div class="flex flex-wrap gap-2">
+ <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm">3 години</span>
+ <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-sm">Мин. 30 поени</span>
  </div>
  </div>
  <span class="text-onSurface/40 group-open:rotate-180 transition-transform text-sm">&darr;</span>
@@ -216,9 +216,9 @@
  <li>прилагодување, преправање и проширување погонски системи;</li>
  <li>изработување резервни делови и конструкциски елементи.</li>
  </ul>
- <div class="mt-4 flex flex-wrap gap-4 text-xs text-onSurface/40 bg-surfaceContainer/30 p-3">
- <span>Број на ученици: 34</span>
- <span>Број на паралелки: 1</span>
+ <div class="mt-4 flex flex-wrap gap-2">
+ <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm">34 ученици</span>
+ <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm">1 паралелка</span>
  </div>
  </div>
  </details>
@@ -230,11 +230,11 @@
  
  <details class="border border-surfaceContainer group">
  <summary class="p-5 cursor-pointer flex items-center justify-between text-onSurface hover:bg-surfaceContainer/30 transition-colors">
- <div class="flex flex-col gap-1 flex-grow">
+ <div class="flex flex-col gap-3 flex-grow">
  <span class="text-base font-medium">Келнер / Готвач</span>
- <div class="flex flex-wrap gap-2 text-xs text-onSurface/50">
- <span>3 години</span>
- <span>Мин. 30 поени</span>
+ <div class="flex flex-wrap gap-2">
+ <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm">3 години</span>
+ <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-sm">Мин. 30 поени</span>
  </div>
  </div>
  <span class="text-onSurface/40 group-open:rotate-180 transition-transform text-sm">&darr;</span>
@@ -243,9 +243,9 @@
  <p class="leading-relaxed">
  Учениците кои ќе се запишат на образовниот профил келнер &ndash; готвач ќе се здобијат со знаење од областа на географијата, информатиката, математиката и од областа на останатите општообразовни предмети. Учениците се здобиваат и со стручно знаење од областа на хигиената, готварството, храната и пијалоците, психологијата, декорацијата во готварството, посложувањето. Учениците имаат и практична настава.
  </p>
- <div class="mt-4 flex flex-wrap gap-4 text-xs text-onSurface/40 bg-surfaceContainer/30 p-3">
- <span>Број на ученици: 34</span>
- <span>Број на паралелки: 1</span>
+ <div class="mt-4 flex flex-wrap gap-2">
+ <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm">34 ученици</span>
+ <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm">1 паралелка</span>
  </div>
  </div>
  </details>
