@@ -11,6 +11,7 @@
         <nav class="hidden md:flex items-center gap-6 text-sm">
             <a href="/about" class="text-onSurface/70 hover:text-onSurface transition-colors">За нас</a>
             <a href="/programs" class="text-onSurface/70 hover:text-onSurface transition-colors">Струки</a>
+            <a href="/staff" class="text-onSurface/70 hover:text-onSurface transition-colors">Вработени</a>
             <a href="/news" class="text-onSurface/70 hover:text-onSurface transition-colors">Новости</a>
             <a href="/contact" class="text-onSurface/70 hover:text-onSurface transition-colors">Контакт</a>
         </nav>
@@ -31,6 +32,7 @@
         <nav class="flex flex-col px-6 py-4 gap-4 text-sm">
             <a href="/about" class="text-onSurface/70 hover:text-onSurface transition-colors py-2">За нас</a>
             <a href="/programs" class="text-onSurface/70 hover:text-onSurface transition-colors py-2">Струки</a>
+            <a href="/staff" class="text-onSurface/70 hover:text-onSurface transition-colors py-2">Вработени</a>
             <a href="/news" class="text-onSurface/70 hover:text-onSurface transition-colors py-2">Новости</a>
             <a href="/contact" class="text-onSurface/70 hover:text-onSurface transition-colors py-2">Контакт</a>
             <a href="https://ednevnik.edu.mk" target="_blank" rel="noopener noreferrer" class="text-primary py-2">Е-Дневник</a>
