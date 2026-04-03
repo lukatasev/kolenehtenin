@@ -20,9 +20,26 @@
                 <span class="material-symbols-outlined text-[18px]">login</span>
                 Е-Дневник
             </a>
-            <button class="md:hidden text-onSurface">
+            <button id="mobile-menu-btn" class="md:hidden text-onSurface">
                 <span class="material-symbols-outlined">menu</span>
             </button>
         </div>
     </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-surfaceContainer">
+        <nav class="flex flex-col px-6 py-4 gap-4 text-sm">
+            <a href="/about" class="text-onSurface/70 hover:text-onSurface transition-colors py-2">За нас</a>
+            <a href="/programs" class="text-onSurface/70 hover:text-onSurface transition-colors py-2">Струки</a>
+            <a href="/news" class="text-onSurface/70 hover:text-onSurface transition-colors py-2">Новости</a>
+            <a href="/contact" class="text-onSurface/70 hover:text-onSurface transition-colors py-2">Контакт</a>
+            <a href="https://ednevnik.edu.mk" target="_blank" rel="noopener noreferrer" class="text-primary py-2">Е-Дневник</a>
+        </nav>
+    </div>
 </header>
+
+<script>
+document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+    document.getElementById('mobile-menu').classList.toggle('hidden');
+});
+</script>
