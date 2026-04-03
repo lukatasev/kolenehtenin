@@ -26,7 +26,7 @@
 
  <!-- Image -->
  <div class="w-full">
- <img src="/assets/images/school_photo2.jpg" alt="Училишна зграда" class="w-full h-72 object-cover rounded-sm">
+ <img src="/assets/images/school_photo1.jpg" alt="Училишна зграда" class="w-full h-72 object-cover rounded-sm">
  </div>
 
  <div class="space-y-4">

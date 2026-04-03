@@ -14,7 +14,7 @@
  <h4 class="text-xs font-semibold mb-3 text-onSurface uppercase tracking-wider">Навигација</h4>
  <ul class="space-y-2 text-sm text-onSurface/60">
  <li><a href="/about" class="hover:text-onSurface transition-colors">За нас</a></li>
- <li><a href="/programs" class="hover:text-onSurface transition-colors">Насоки</a></li>
+ <li><a href="/programs" class="hover:text-onSurface transition-colors">Струки</a></li>
  <li><a href="/news" class="hover:text-onSurface transition-colors">Новости</a></li>
  <li><a href="/contact" class="hover:text-onSurface transition-colors">Контакт</a></li>
  </ul>

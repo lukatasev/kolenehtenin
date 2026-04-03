@@ -14,7 +14,7 @@
                     </p>
                     <div class="flex gap-4 pt-2">
                         <a href="/programs" class="inline-flex items-center px-6 py-2.5 bg-primary text-onPrimary text-sm font-medium rounded-sm hover:opacity-90 transition-opacity">
-                            Погледни насоки
+                            Погледни струки
                         </a>
                         <a href="/about" class="inline-flex items-center px-6 py-2.5 border border-surfaceContainer text-onSurface text-sm font-medium rounded-sm hover:bg-surfaceContainer transition-colors">
                             За нас
@@ -57,7 +57,7 @@
     <section class="py-16 px-6 max-w-5xl mx-auto">
         <div class="flex items-end justify-between mb-10">
             <div>
-                <h2 class="text-xl font-semibold text-onSurface">Стручни Насоки</h2>
+                <h2 class="text-xl font-semibold text-onSurface">Струки</h2>
                 <p class="text-sm text-onSurface/50 mt-1">Модерен пристап и практична настава.</p>
             </div>
             <a href="/programs" class="hidden md:flex items-center gap-1 text-sm text-primary hover:underline">

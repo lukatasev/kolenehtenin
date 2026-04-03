@@ -10,7 +10,7 @@
  
  <nav class="hidden md:flex items-center gap-6 text-sm">
  <a href="/about" class="text-onSurface/70 hover:text-onSurface transition-colors">За нас</a>
- <a href="/programs" class="text-onSurface/70 hover:text-onSurface transition-colors">Насоки</a>
+ <a href="/programs" class="text-onSurface/70 hover:text-onSurface transition-colors">Струки</a>
  <a href="/news" class="text-onSurface/70 hover:text-onSurface transition-colors">Новости</a>
  <a href="/contact" class="text-onSurface/70 hover:text-onSurface transition-colors">Контакт</a>
  </nav>
