@@ -32,7 +32,7 @@
     <!-- Stats -->
     <section class="border-b border-surfaceContainer bg-surfaceContainer/40">
         <div class="max-w-5xl mx-auto px-6 py-8">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
                 <div>
                     <p class="text-2xl font-semibold text-onSurface">60+</p>
                     <p class="text-sm text-onSurface/50 mt-1">Години традиција</p>
@@ -44,10 +44,6 @@
                 <div>
                     <p class="text-2xl font-semibold text-onSurface">10</p>
                     <p class="text-sm text-onSurface/50 mt-1">Стручни профили</p>
-                </div>
-                <div>
-                    <p class="text-2xl font-semibold text-onSurface">Дуално</p>
-                    <p class="text-sm text-onSurface/50 mt-1">Образование</p>
                 </div>
             </div>
         </div>

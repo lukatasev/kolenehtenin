@@ -1,3 +1,19 @@
+<?php
+$months = [
+    "01" => "Јануари", "02" => "Февруари", "03" => "Март",
+    "04" => "Април", "05" => "Мај", "06" => "Јуни",
+    "07" => "Јули", "08" => "Август", "09" => "Септември",
+    "10" => "Октомври", "11" => "Ноември", "12" => "Декември"
+];
+
+function formatDate($date, $months) {
+    $parts = explode("-", $date);
+    $day = ltrim($parts[2], "0");
+    $month = $months[$parts[1]];
+    $year = $parts[0];
+    return "$day $month, $year";
+}
+?>
 @include('partials.header')
 
 <main class="w-full flex-grow">
@@ -11,45 +27,60 @@
 
     <!-- Content -->
     <section class="py-16 px-6 max-w-5xl mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            
-            <!-- Article 1 -->
-            <div class="bg-surface border border-surfaceContainer overflow-hidden">
-                <img src="/assets/images/school_photo1.jpg" alt="Пролетни денови на училишен спорт" class="w-full h-48 object-cover">
-                <div class="p-5">
-                    <span class="text-xs text-onSurface/40 mb-2 block">11 Април, 2025</span>
-                    <h3 class="text-base font-semibold text-onSurface mb-2 leading-tight">Пролетни денови на училишен спорт</h3>
-                    <p class="text-sm text-onSurface/60 leading-relaxed">
-                        Во организација на општина Штип и Сојузот на училишен спорт денес во СОУ „Коле Нехтенин" Штип започнуваат Пролетните денови на училишен спорт.
-                    </p>
-                </div>
+        <?php if (empty($news)): ?>
+            <p class="text-onSurface/50 text-center py-12">Нема објавени новости.</p>
+        <?php else: ?>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <?php foreach ($news as $article): ?>
+                    <div class="bg-surface border border-surfaceContainer overflow-hidden">
+                        <?php if (!empty($article["image_main"])): ?>
+                            <img src="<?php echo htmlspecialchars($article["image_main"]); ?>" alt="<?php echo htmlspecialchars($article["title"]); ?>" class="w-full h-48 object-cover object-top">
+                        <?php else: ?>
+                            <div class="w-full h-48 bg-surfaceContainer flex items-center justify-center">
+                                <span class="material-symbols-outlined text-onSurface/20 text-6xl">newspaper</span>
+                            </div>
+                        <?php endif; ?>
+                        <div class="p-5">
+                            <span class="text-xs text-onSurface/40 mb-2 block"><?php echo formatDate($article["date"], $months); ?></span>
+                            <h3 class="text-base font-semibold text-onSurface mb-2 leading-tight"><?php echo htmlspecialchars($article["title"]); ?></h3>
+                            <p class="text-sm text-onSurface/60 leading-relaxed">
+                                <?php echo htmlspecialchars($article["excerpt"]); ?>
+                            </p>
+                            <?php if (!empty($article["category"])): ?>
+                                <span class="inline-block mt-3 text-xs text-onSurface/40 uppercase tracking-wider"><?php echo htmlspecialchars($article["category"]); ?></span>
+                            <?php endif; ?>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
             </div>
 
-            <!-- Article 2 -->
-            <div class="bg-surface border border-surfaceContainer overflow-hidden">
-                <img src="/assets/images/school_photo2.jpg" alt="Посета на Лесновски манастир" class="w-full h-48 object-cover">
-                <div class="p-5">
-                    <span class="text-xs text-onSurface/40 mb-2 block">10 Април, 2025</span>
-                    <h3 class="text-base font-semibold text-onSurface mb-2 leading-tight">Посета на Лесновски манастир</h3>
-                    <p class="text-sm text-onSurface/60 leading-relaxed">
-                        Успешно се реализираше посета на Лесновскиот манастир и Музејот на ретки минерали во Пробиштип од страна на нашите ученици од трета година.
-                    </p>
-                </div>
-            </div>
+            <!-- Pagination -->
+            <?php if ($total_pages > 1): ?>
+                <div class="flex justify-center items-center gap-2 mt-12">
+                    <?php if ($current_page > 1): ?>
+                        <a href="/news?page=<?php echo $current_page - 1; ?>" class="px-4 py-2 text-sm border border-surfaceContainer rounded-sm hover:bg-surfaceContainer transition-colors text-onSurface/70 hover:text-onSurface">
+                            &larr; Претходна
+                        </a>
+                    <?php endif; ?>
 
-            <!-- Article 3 -->
-            <div class="bg-surface border border-surfaceContainer overflow-hidden">
-                <img src="/assets/images/school_photo1.jpg" alt="Крводарителна акција" class="w-full h-48 object-cover">
-                <div class="p-5">
-                    <span class="text-xs text-onSurface/40 mb-2 block">10 Април, 2025</span>
-                    <h3 class="text-base font-semibold text-onSurface mb-2 leading-tight">Крводарителна акција</h3>
-                    <p class="text-sm text-onSurface/60 leading-relaxed">
-                        Успешно спроведена крводарителна акција во соработка со Општинската организација на Црвен Крст-Штип каде зедоа учество голем број матуранти.
-                    </p>
-                </div>
-            </div>
+                    <?php for ($i = 1; $i <= $total_pages; $i++): ?>
+                        <?php if ($i === $current_page): ?>
+                            <span class="px-4 py-2 text-sm bg-primary text-onPrimary font-medium rounded-sm"><?php echo $i; ?></span>
+                        <?php else: ?>
+                            <a href="/news?page=<?php echo $i; ?>" class="px-4 py-2 text-sm border border-surfaceContainer rounded-sm hover:bg-surfaceContainer transition-colors text-onSurface/70 hover:text-onSurface">
+                                <?php echo $i; ?>
+                            </a>
+                        <?php endif; ?>
+                    <?php endfor; ?>
 
-        </div>
+                    <?php if ($current_page < $total_pages): ?>
+                        <a href="/news?page=<?php echo $current_page + 1; ?>" class="px-4 py-2 text-sm border border-surfaceContainer rounded-sm hover:bg-surfaceContainer transition-colors text-onSurface/70 hover:text-onSurface">
+                            Следна &rarr;
+                        </a>
+                    <?php endif; ?>
+                </div>
+            <?php endif; ?>
+        <?php endif; ?>
     </section>
 </main>
 

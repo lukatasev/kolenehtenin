@@ -50,6 +50,11 @@ class Route {
         global $blade;
         $page = $this->from($url);
 
+        if(empty($page)) {
+          http_response_code(404);
+          $page = "404";
+        }
+
         if(is_callable($page)) {
           return call_user_func($page, $variables);
         } else {
