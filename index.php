@@ -33,7 +33,7 @@ $route->get("/news", function($vars) {
     ]);
 });
 $route->get("/contact", "contact");
-$route->get("/staff", "vraboteni");
+$route->get("/staff", "staff");
 
 $page = $route->render_url($_SERVER["REQUEST_URI"], $GLOBALS);
 ?>
