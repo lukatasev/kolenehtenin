@@ -13,6 +13,25 @@ function formatDate($date, $months) {
     $year = $parts[0];
     return "$day $month, $year";
 }
+
+function truncateExcerpt($text, $maxChars = 180) {
+    $text = strip_tags($text);
+    $text = trim($text);
+    if (mb_strlen($text) > $maxChars) {
+        $text = mb_substr($text, 0, $maxChars);
+        $lastSpace = mb_strrpos($text, ' ');
+        if ($lastSpace !== false) {
+            $text = mb_substr($text, 0, $lastSpace);
+        }
+        $text .= "...";
+    }
+    return $text;
+}
+
+function formatExcerpt($text) {
+    $escaped = htmlspecialchars($text, ENT_QUOTES, 'UTF-8');
+    return nl2br($escaped);
+}
 ?>
 @include('partials.header')
 
@@ -43,8 +62,8 @@ function formatDate($date, $months) {
                         <div class="p-5">
                             <span class="text-xs text-onSurface/40 mb-2 block"><?php echo formatDate($article["date"], $months); ?></span>
                             <h3 class="text-base font-semibold text-onSurface mb-2 leading-tight"><?php echo htmlspecialchars($article["title"]); ?></h3>
-                            <p class="text-sm text-onSurface/60 leading-relaxed">
-                                <?php echo htmlspecialchars($article["excerpt"]); ?>
+                            <p class="text-sm text-onSurface/60 leading-relaxed line-clamp-[6]">
+                                <?php echo formatExcerpt(truncateExcerpt($article["excerpt"], 300)); ?>
                             </p>
                             <?php if (!empty($article["category"])): ?>
                                 <span class="inline-block mt-3 text-xs text-onSurface/40 uppercase tracking-wider"><?php echo htmlspecialchars($article["category"]); ?></span>
