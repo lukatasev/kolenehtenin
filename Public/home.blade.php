@@ -91,6 +91,43 @@
         </a>
     </section>
 
+    <!-- Recent News -->
+    @if(!empty($recentNews))
+    <section class="border-t border-surfaceContainer py-16 px-6 max-w-5xl mx-auto">
+        <div class="flex items-end justify-between mb-8">
+            <div>
+                <h2 class="text-xl font-semibold text-onSurface">Новости</h2>
+                <p class="text-sm text-onSurface/50 mt-1">Од училиштето и активностите.</p>
+            </div>
+            <a href="/news" class="hidden md:flex items-center gap-1 text-sm text-primary hover:underline">
+                Сите новости &rarr;
+            </a>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            @foreach($recentNews as $news)
+            <a href="/news?article={{ $news['slug'] }}" class="group flex flex-col bg-surface border border-surfaceContainer overflow-hidden hover:border-primary/40 transition-colors">
+                @if($news['image_main'])
+                <div class="w-full h-40 overflow-hidden">
+                    <img src="{{ $news['image_main'] }}" alt="{{ $news['title'] }}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </div>
+                @endif
+                <div class="flex flex-col flex-grow p-5">
+                    <p class="text-xs text-onSurface/50 mb-2">{{ \Carbon\Carbon::parse($news['date'])->format('d.m.Y') }}</p>
+                    <h3 class="text-base font-semibold text-onSurface mb-2 group-hover:text-primary transition-colors line-clamp-2">{{ $news['title'] }}</h3>
+                    @if($news['excerpt'])
+                    <p class="text-sm text-onSurface/60 flex-grow line-clamp-3">{{ $news['excerpt'] }}</p>
+                    @endif
+                </div>
+            </a>
+            @endforeach
+        </div>
+        <a href="/news" class="md:hidden mt-6 flex items-center justify-center gap-1 text-sm text-primary">
+            Сите новости &rarr;
+        </a>
+    </section>
+    @endif
+
     <!-- School Gallery -->
     <section class="border-t border-surfaceContainer py-16 px-6 max-w-5xl mx-auto">
         <h2 class="text-xl font-semibold text-onSurface mb-8">Галерија</h2>

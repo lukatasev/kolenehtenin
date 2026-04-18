@@ -1,8 +1,32 @@
 <?php
 require_once "Art/Load.php";
 
-$route->get("index", "home");
-$route->get("/home", "home");
+$route->get("index", function($vars) {
+    require_once __DIR__ . "/api/db.php";
+    
+    $stmt = $pdo->query("
+        SELECT id, slug, title, excerpt, date, image_main
+        FROM news
+        ORDER BY date DESC, id DESC
+        LIMIT 3
+    ");
+    $recentNews = $stmt->fetchAll();
+    
+    return $route->render("home", ["recentNews" => $recentNews]);
+});
+$route->get("/home", function($vars) {
+    require_once __DIR__ . "/api/db.php";
+    
+    $stmt = $pdo->query("
+        SELECT id, slug, title, excerpt, date, image_main
+        FROM news
+        ORDER BY date DESC, id DESC
+        LIMIT 3
+    ");
+    $recentNews = $stmt->fetchAll();
+    
+    return $route->render("home", ["recentNews" => $recentNews]);
+});
 $route->get("/about", "about");
 $route->get("/programs", "programs");
 $route->get("/news", function($vars) {
@@ -26,7 +50,7 @@ $route->get("/news", function($vars) {
     $totalStmt = $pdo->query("SELECT COUNT(*) FROM news");
     $total = (int)$totalStmt->fetchColumn();
 
-    return $vars["blade"]->run("news", [
+    return $route->render("news", [
         "news" => $news,
         "current_page" => $page,
         "total_pages" => (int)ceil($total / $limit),

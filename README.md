@@ -19,3 +19,4 @@ Technical/SEO:
 - calendar or enrollment guide and points calculator
 - multiple languages (mk, english, turkish, albanian)
 - timetable of smeni and each period time
+- add recent news in the home page
