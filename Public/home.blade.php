@@ -92,6 +92,17 @@
     </section>
 
     <!-- Recent News -->
+    @php
+    require_once __DIR__ . "/../api/db.php";
+    $stmt = $pdo->query("
+        SELECT id, slug, title, excerpt, date, image_main
+        FROM news
+        ORDER BY date DESC, id DESC
+        LIMIT 3
+    ");
+    $recentNews = $stmt->fetchAll();
+    @endphp
+    
     @if(!empty($recentNews))
     <section class="border-t border-surfaceContainer py-16 px-6 max-w-5xl mx-auto">
         <div class="flex items-end justify-between mb-8">
@@ -113,7 +124,7 @@
                 </div>
                 @endif
                 <div class="flex flex-col flex-grow p-5">
-                    <p class="text-xs text-onSurface/50 mb-2">{{ \Carbon\Carbon::parse($news['date'])->format('d.m.Y') }}</p>
+                    <p class="text-xs text-onSurface/50 mb-2">{{ date('d.m.Y', strtotime($news['date'])) }}</p>
                     <h3 class="text-base font-semibold text-onSurface mb-2 group-hover:text-primary transition-colors line-clamp-2">{{ $news['title'] }}</h3>
                     @if($news['excerpt'])
                     <p class="text-sm text-onSurface/60 flex-grow line-clamp-3">{{ $news['excerpt'] }}</p>

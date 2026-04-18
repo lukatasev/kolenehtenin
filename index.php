@@ -1,61 +1,11 @@
 <?php
 require_once "Art/Load.php";
 
-$route->get("index", function($vars) {
-    require_once __DIR__ . "/api/db.php";
-    
-    $stmt = $pdo->query("
-        SELECT id, slug, title, excerpt, date, image_main
-        FROM news
-        ORDER BY date DESC, id DESC
-        LIMIT 3
-    ");
-    $recentNews = $stmt->fetchAll();
-    
-    return $route->render("home", ["recentNews" => $recentNews]);
-});
-$route->get("/home", function($vars) {
-    require_once __DIR__ . "/api/db.php";
-    
-    $stmt = $pdo->query("
-        SELECT id, slug, title, excerpt, date, image_main
-        FROM news
-        ORDER BY date DESC, id DESC
-        LIMIT 3
-    ");
-    $recentNews = $stmt->fetchAll();
-    
-    return $route->render("home", ["recentNews" => $recentNews]);
-});
+$route->get("index", "home");
+$route->get("/home", "home");
 $route->get("/about", "about");
 $route->get("/programs", "programs");
-$route->get("/news", function($vars) {
-    require_once __DIR__ . "/api/db.php";
-    $page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
-    $limit = 12;
-    $offset = ($page - 1) * $limit;
-
-    $stmt = $pdo->prepare("
-        SELECT id, slug, title, excerpt, content, date, category, source_url,
-               image_main, image_2, image_3, image_4, image_5
-        FROM news
-        ORDER BY date DESC, id DESC
-        LIMIT :limit OFFSET :offset
-    ");
-    $stmt->bindValue(':limit', $limit, PDO::PARAM_INT);
-    $stmt->bindValue(':offset', $offset, PDO::PARAM_INT);
-    $stmt->execute();
-    $news = $stmt->fetchAll();
-
-    $totalStmt = $pdo->query("SELECT COUNT(*) FROM news");
-    $total = (int)$totalStmt->fetchColumn();
-
-    return $route->render("news", [
-        "news" => $news,
-        "current_page" => $page,
-        "total_pages" => (int)ceil($total / $limit),
-    ]);
-});
+$route->get("/news", "news");
 $route->get("/contact", "contact");
 $route->get("/staff", "staff");
 

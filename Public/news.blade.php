@@ -32,6 +32,28 @@ function formatExcerpt($text) {
     $escaped = htmlspecialchars($text, ENT_QUOTES, 'UTF-8');
     return nl2br($escaped);
 }
+
+require_once __DIR__ . "/../api/db.php";
+$page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
+$limit = 12;
+$offset = ($page - 1) * $limit;
+
+$stmt = $pdo->prepare("
+    SELECT id, slug, title, excerpt, content, date, category, source_url,
+           image_main, image_2, image_3, image_4, image_5
+    FROM news
+    ORDER BY date DESC, id DESC
+    LIMIT :limit OFFSET :offset
+");
+$stmt->bindValue(':limit', $limit, PDO::PARAM_INT);
+$stmt->bindValue(':offset', $offset, PDO::PARAM_INT);
+$stmt->execute();
+$news = $stmt->fetchAll();
+
+$totalStmt = $pdo->query("SELECT COUNT(*) FROM news");
+$total = (int)$totalStmt->fetchColumn();
+$total_pages = (int)ceil($total / $limit);
+$current_page = $page;
 ?>
 @include('partials.header')
 
