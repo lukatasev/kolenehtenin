@@ -140,18 +140,37 @@
  </section>
  <?php endif; ?>
 
+ <!-- Partner Companies -->
+ <section class="border-t border-surfaceContainer py-16 px-6 max-w-5xl mx-auto">
+ <h2 class="text-xl font-semibold text-onSurface mb-8">Партнерски компании</h2>
+ <div class="flex gap-8 overflow-x-auto pb-4 items-center">
+ <img src="/assets/images/companies/tm_doo.png" alt="ТМ ДОО" class="h-16 w-auto object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all">
+ <img src="/assets/images/companies/aktiva_doo.jpg" alt="АКТИВА ДОО" class="h-16 w-auto object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all">
+ <img src="/assets/images/companies/jp_hidrosistem_zletovica.png" alt="ЈП Хидросистем Злетовица" class="h-16 w-auto object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all">
+ <img src="/assets/images/companies/jole_dooel.png" alt="ЈОЛЕ ДООЕЛ" class="h-16 w-auto object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all">
+ <img src="/assets/images/companies/drvodekor_enterier.jpg" alt="Дрводекор Ентериер" class="h-16 w-auto object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all">
+ <img src="/assets/images/companies/elektrodistribucija.jpg" alt="Електродистрибуција" class="h-16 w-auto object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all">
+ <img src="/assets/images/companies/zdvil_lion.png" alt="ЗДВИЛ ЛИОН" class="h-16 w-auto object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all">
+ </div>
+ </section>
+
  <!-- School Gallery -->
  <section class="border-t border-surfaceContainer py-16 px-6 max-w-5xl mx-auto">
- <h2 class="text-xl font-semibold text-onSurface mb-8">Галерија</h2>
- <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
- <img src="/assets/images/school_photo1.jpg" alt="Училиште" class="w-full h-60 object-cover rounded-sm">
- <img src="/assets/images/school_photo2.jpg" alt="Училиште" class="w-full h-60 object-cover rounded-sm">
- <img src="/assets/images/classroom1.jpg" alt="Училница" class="w-full h-60 object-cover rounded-sm">
- <img src="/assets/images/day_of_school1.jpg" alt="Денот во училиште" class="w-full h-60 object-cover rounded-sm">
+ <div class="flex items-end justify-between mb-8">
+ <div>
+ <h2 class="text-xl font-semibold text-onSurface">Галерија</h2>
+ <p class="text-sm text-onSurface/50 mt-1">Слики од училиштето.</p>
  </div>
- <a href="/gallery" class="mt-6 inline-flex items-center px-6 py-2.5 bg-primary text-onPrimary text-sm font-medium rounded-sm hover:opacity-90 transition-opacity block max-w-xs">
- Погледнете ги сите снимки &rarr;
+ <a href="/gallery" class="hidden md:flex items-center gap-1 text-sm text-primary hover:underline">
+ Сите слики &rarr;
  </a>
+ </div>
+ <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+ <img src="/assets/images/school_photo1.jpg" alt="Училиште" class="w-full h-60 object-cover rounded-sm cursor-pointer" data-lightbox>
+ <img src="/assets/images/school_photo2.jpg" alt="Училиште" class="w-full h-60 object-cover rounded-sm cursor-pointer" data-lightbox>
+ <img src="/assets/images/classroom1.jpg" alt="Училница" class="w-full h-60 object-cover rounded-sm cursor-pointer" data-lightbox>
+ <img src="/assets/images/day_of_school1.jpg" alt="Денот во училиште" class="w-full h-60 object-cover rounded-sm cursor-pointer" data-lightbox>
+ </div>
  </section>
 
 </main>

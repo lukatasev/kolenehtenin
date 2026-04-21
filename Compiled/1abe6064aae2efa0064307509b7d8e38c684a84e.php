@@ -89,7 +89,14 @@
  <li>да организира и применува хигиено &ndash; техничка заштита;</li>
  <li>да води мал бизнис;</li>
  </ul>
- <p class="mt-3 text-xs text-onSurface/50">Во соработка со компании: ТМ ДОО, ЈП Хидросистем Злетовица-Пробиштип, ЈОЛЕ ДООЕЛ Штип, Дрводекот &ndash; Ентериер, Електродистрибуција ДООЕЛ, ЗДВИЛ ЛИОН ДОО</p>
+ <div class="mt-3 flex gap-4 items-center">
+ <img src="/assets/images/companies/tm_doo.png" alt="ТМ ДОО" class="h-8 w-auto object-contain grayscale hover:grayscale-0 transition-all">
+ <img src="/assets/images/companies/jp_hidrosistem_zletovica.png" alt="ЈП Хидросистем Злетовица" class="h-8 w-auto object-contain grayscale hover:grayscale-0 transition-all">
+ <img src="/assets/images/companies/jole_dooel.png" alt="ЈОЛЕ ДООЕЛ" class="h-8 w-auto object-contain grayscale hover:grayscale-0 transition-all">
+ <img src="/assets/images/companies/drvodekor_enterier.jpg" alt="Дрводекор Ентериер" class="h-8 w-auto object-contain grayscale hover:grayscale-0 transition-all">
+ <img src="/assets/images/companies/elektrodistribucija.jpg" alt="Електродистрибуција" class="h-8 w-auto object-contain grayscale hover:grayscale-0 transition-all">
+ <img src="/assets/images/companies/zdvil_lion.png" alt="ЗДВИЛ ЛИОН" class="h-8 w-auto object-contain grayscale hover:grayscale-0 transition-all">
+ </div>
  <div class="mt-4 flex flex-wrap gap-2">
  <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm">25 ученици</span>
  <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm">1 паралелка</span>
@@ -158,7 +165,10 @@
  <li>да се грижи за хигиенско &ndash; техничката заштита;</li>
  <li>да се грижи за заштита на животната средина;</li>
  </ul>
- <p class="mt-3 text-xs text-onSurface/50">Во соработка со компании: ТМ ДОО, АКТИВА ДОО</p>
+ <div class="mt-3 flex gap-4 items-center">
+ <img src="/assets/images/companies/tm_doo.png" alt="ТМ ДОО" class="h-8 w-auto object-contain grayscale hover:grayscale-0 transition-all">
+ <img src="/assets/images/companies/aktiva_doo.jpg" alt="АКТИВА ДОО" class="h-8 w-auto object-contain grayscale hover:grayscale-0 transition-all">
+ </div>
  <div class="mt-4 flex flex-wrap gap-2">
  <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm">25 ученици</span>
  <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm">1 паралелка</span>
