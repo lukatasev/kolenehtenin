@@ -30,6 +30,23 @@
  
  <details class="border border-surfaceContainer group">
  <summary class="p-5 cursor-pointer flex items-center justify-between text-onSurface hover:bg-surfaceContainer/30 transition-colors">
+ <span class="text-base font-medium flex items-center gap-2">
+ <i class="ti ti-player-play text-onSurface/60"></i>
+ Погледнете го видеото
+ </span>
+ <span class="text-onSurface/40 group-open:rotate-180 transition-transform text-sm">&darr;</span>
+ </summary>
+ <div class="px-5 pb-5 border-t border-surfaceContainer">
+ <div class="aspect-video max-w-2xl mx-auto w-full mt-5">
+ <video controls class="w-full h-full object-contain rounded-sm bg-black">
+ <source src="/assets/videos/elektro.mp4" type="video/mp4">
+ </video>
+ </div>
+ </div>
+ </details>
+
+ <details class="border border-surfaceContainer group">
+ <summary class="p-5 cursor-pointer flex items-center justify-between text-onSurface hover:bg-surfaceContainer/30 transition-colors">
  <div class="flex flex-col gap-3 flex-grow">
  <span class="text-base font-medium">Електротехничар за компјутерска техника и автоматика</span>
  <div class="flex flex-wrap gap-2">
@@ -142,6 +159,23 @@
  
  <details class="border border-surfaceContainer group">
  <summary class="p-5 cursor-pointer flex items-center justify-between text-onSurface hover:bg-surfaceContainer/30 transition-colors">
+ <span class="text-base font-medium flex items-center gap-2">
+ <i class="ti ti-player-play text-onSurface/60"></i>
+ Погледнете го видеото
+ </span>
+ <span class="text-onSurface/40 group-open:rotate-180 transition-transform text-sm">&darr;</span>
+ </summary>
+ <div class="px-5 pb-5 border-t border-surfaceContainer">
+ <div class="aspect-video max-w-2xl mx-auto w-full mt-5">
+ <video controls class="w-full h-full object-contain rounded-sm bg-black">
+ <source src="/assets/videos/mashinska.mp4" type="video/mp4">
+ </video>
+ </div>
+ </div>
+ </details>
+
+ <details class="border border-surfaceContainer group">
+ <summary class="p-5 cursor-pointer flex items-center justify-between text-onSurface hover:bg-surfaceContainer/30 transition-colors">
  <div class="flex flex-col gap-3 flex-grow">
  <span class="text-base font-medium">Техничар за компјутерско управување / Машински техничар</span>
  <div class="flex flex-wrap gap-2">
@@ -240,6 +274,23 @@
  <div class="space-y-4">
  <h2 class="text-xl font-semibold text-onSurface border-b border-surfaceContainer pb-3">Угостителско-туристичка струка &mdash; 34 ученици, 1 паралелка</h2>
  
+ <details class="border border-surfaceContainer group">
+ <summary class="p-5 cursor-pointer flex items-center justify-between text-onSurface hover:bg-surfaceContainer/30 transition-colors">
+ <span class="text-base font-medium flex items-center gap-2">
+ <i class="ti ti-player-play text-onSurface/60"></i>
+ Погледнете го видеото
+ </span>
+ <span class="text-onSurface/40 group-open:rotate-180 transition-transform text-sm">&darr;</span>
+ </summary>
+ <div class="px-5 pb-5 border-t border-surfaceContainer">
+ <div class="aspect-[9/16] max-w-sm mx-auto w-full mt-5">
+ <video controls class="w-full h-full object-contain rounded-sm bg-black">
+ <source src="/assets/videos/ugostitelstvo.mp4" type="video/mp4">
+ </video>
+ </div>
+ </div>
+ </details>
+
  <details class="border border-surfaceContainer group">
  <summary class="p-5 cursor-pointer flex items-center justify-between text-onSurface hover:bg-surfaceContainer/30 transition-colors">
  <div class="flex flex-col gap-3 flex-grow">
