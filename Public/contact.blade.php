@@ -62,7 +62,7 @@
 
             <div>
             <iframe
-                    src="https://www.google.com/maps?q=Bul.%20Goce%20Delchev%20101,%20Štip&output=embed"
+                    src="https://www.google.com/maps?q=Kole+Nehtenin+Shtip,North+Macedonia&output=embed"
                     width="100%"
                     height="300"
                     style="border:0;"
