@@ -18,7 +18,7 @@ $page = $route->render_url($_SERVER["REQUEST_URI"], $GLOBALS);
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2/tabler-icons.min.css">
     <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>

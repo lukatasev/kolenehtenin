@@ -12,7 +12,7 @@
  <section class="border-b border-surfaceContainer bg-primary/5">
  <div class="max-w-5xl mx-auto px-6 py-6">
  <div class="flex items-start gap-3">
- <span class="material-symbols-outlined text-primary text-[24px] mt-0.5">info</span>
+ <i class="ti ti-info-circle text-primary text-[24px] mt-0.5"></i>
  <div>
  <p class="text-sm font-medium text-onSurface">Запишуваме 254 ученици во 8 паралелки за учебната 2026/2027 година.</p>
  <a href="https://mon.gov.mk/mk-MK/odnosi-so-javnost/soopstenija/objaven-e-konkursot-za-upis-vo-sredni-ucilista-vo-ucebnata-2026-2027-godina" target="_blank" rel="noopener noreferrer" class="text-sm text-primary hover:underline mt-1 inline-block">Погледни го официјалниот конкурс &rarr;</a>
@@ -89,13 +89,14 @@
  <li>да организира и применува хигиено &ndash; техничка заштита;</li>
  <li>да води мал бизнис;</li>
  </ul>
- <div class="mt-3 flex gap-4 items-center">
- <img src="/assets/images/companies/tm_doo.png" alt="ТМ ДОО" class="h-8 w-auto object-contain grayscale hover:grayscale-0 transition-all">
- <img src="/assets/images/companies/jp_hidrosistem_zletovica.png" alt="ЈП Хидросистем Злетовица" class="h-8 w-auto object-contain grayscale hover:grayscale-0 transition-all">
- <img src="/assets/images/companies/jole_dooel.png" alt="ЈОЛЕ ДООЕЛ" class="h-8 w-auto object-contain grayscale hover:grayscale-0 transition-all">
- <img src="/assets/images/companies/drvodekor_enterier.jpg" alt="Дрводекор Ентериер" class="h-8 w-auto object-contain grayscale hover:grayscale-0 transition-all">
- <img src="/assets/images/companies/elektrodistribucija.jpg" alt="Електродистрибуција" class="h-8 w-auto object-contain grayscale hover:grayscale-0 transition-all">
- <img src="/assets/images/companies/zdvil_lion.png" alt="ЗДВИЛ ЛИОН" class="h-8 w-auto object-contain grayscale hover:grayscale-0 transition-all">
+ <p class="mt-3 font-medium text-onSurface">Партнерски компании:</p>
+ <div class="mt-2 flex gap-4 items-center">
+ <img src="/assets/images/companies/tm_doo.png" alt="ТМ ДОО" class="h-8 w-auto object-contain">
+ <img src="/assets/images/companies/jp_hidrosistem_zletovica.png" alt="ЈП Хидросистем Злетовица" class="h-8 w-auto object-contain">
+ <img src="/assets/images/companies/jole_dooel.png" alt="ЈОЛЕ ДООЕЛ" class="h-8 w-auto object-contain">
+ <img src="/assets/images/companies/drvodekor_enterier.jpg" alt="Дрводекор Ентериер" class="h-8 w-auto object-contain">
+ <img src="/assets/images/companies/elektrodistribucija.jpg" alt="Електродистрибуција" class="h-8 w-auto object-contain">
+ <img src="/assets/images/companies/zdvil_lion.png" alt="ЗДВИЛ ЛИОН" class="h-8 w-auto object-contain">
  </div>
  <div class="mt-4 flex flex-wrap gap-2">
  <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm">25 ученици</span>
@@ -165,9 +166,10 @@
  <li>да се грижи за хигиенско &ndash; техничката заштита;</li>
  <li>да се грижи за заштита на животната средина;</li>
  </ul>
- <div class="mt-3 flex gap-4 items-center">
- <img src="/assets/images/companies/tm_doo.png" alt="ТМ ДОО" class="h-8 w-auto object-contain grayscale hover:grayscale-0 transition-all">
- <img src="/assets/images/companies/aktiva_doo.jpg" alt="АКТИВА ДОО" class="h-8 w-auto object-contain grayscale hover:grayscale-0 transition-all">
+ <p class="mt-3 font-medium text-onSurface">Партнерски компании:</p>
+ <div class="mt-2 flex gap-4 items-center">
+ <img src="/assets/images/companies/tm_doo.png" alt="ТМ ДОО" class="h-8 w-auto object-contain">
+ <img src="/assets/images/companies/aktiva_doo.jpg" alt="АКТИВА ДОО" class="h-8 w-auto object-contain">
  </div>
  <div class="mt-4 flex flex-wrap gap-2">
  <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm">25 ученици</span>

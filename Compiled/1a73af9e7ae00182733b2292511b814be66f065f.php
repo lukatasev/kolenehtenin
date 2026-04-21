@@ -13,7 +13,7 @@
  <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
  <div class="space-y-8">
  <div class="flex items-start gap-3">
- <span class="material-symbols-outlined text-onSurface/40 text-[22px] mt-0.5">location_on</span>
+ <i class="ti ti-map-pin text-onSurface/40 text-[22px] mt-0.5"></i>
  <div>
  <h3 class="text-sm font-semibold text-onSurface uppercase tracking-wider mb-1">Адреса</h3>
  <p class="text-onSurface/70">Булевар Гоце Делчев бр. 101<br>2000 Штип, Македонија</p>
@@ -21,7 +21,7 @@
  </div>
 
  <div class="flex items-start gap-3">
- <span class="material-symbols-outlined text-onSurface/40 text-[22px] mt-0.5">call</span>
+ <i class="ti ti-phone text-onSurface/40 text-[22px] mt-0.5"></i>
  <div>
  <h3 class="text-sm font-semibold text-onSurface uppercase tracking-wider mb-1">Телефон</h3>
  <p class="text-onSurface/70">
@@ -32,7 +32,7 @@
  </div>
 
  <div class="flex items-start gap-3">
- <span class="material-symbols-outlined text-onSurface/40 text-[22px] mt-0.5">mail</span>
+ <i class="ti ti-mail text-onSurface/40 text-[22px] mt-0.5"></i>
  <div>
  <h3 class="text-sm font-semibold text-onSurface uppercase tracking-wider mb-1">Е-пошта</h3>
  <p class="text-onSurface/70">
@@ -43,16 +43,16 @@
  </div>
 
  <div class="flex items-start gap-3">
- <span class="material-symbols-outlined text-onSurface/40 text-[22px] mt-0.5">share</span>
+ <i class="ti ti-share text-onSurface/40 text-[22px] mt-0.5"></i>
  <div>
  <h3 class="text-sm font-semibold text-onSurface uppercase tracking-wider mb-1">Социјални мрежи</h3>
  <div class="flex gap-3 text-onSurface/70">
  <a href="https://www.facebook.com/skolenehtenin" target="_blank" rel="noopener noreferrer" class="hover:text-onSurface transition-colors flex items-center gap-1">
- <span class="material-symbols-outlined text-[20px]">public</span>
+ <i class="ti ti-brand-facebook text-[20px]"></i>
  Facebook
  </a>
  <a href="https://www.instagram.com/dsu_rcsoo_kole.nehtenin" target="_blank" rel="noopener noreferrer" class="hover:text-onSurface transition-colors flex items-center gap-1">
- <span class="material-symbols-outlined text-[20px]">camera_alt</span>
+ <i class="ti ti-brand-instagram text-[20px]"></i>
  Instagram
  </a>
  </div>

@@ -65,11 +65,11 @@ $current_page = $page;
             <p class="text-base text-onSurface/60 mt-2">Активности и постигнувања на учениците.</p>
             <div class="flex gap-4 mt-4">
                 <a href="https://www.facebook.com/skolenehtenin" target="_blank" rel="noopener noreferrer" class="text-sm text-onSurface/60 hover:text-onSurface flex items-center gap-1">
-                    <span class="material-symbols-outlined text-[18px]">public</span>
+                    <i class="ti ti-brand-facebook text-[18px]"></i>
                     Facebook
                 </a>
                 <a href="https://www.instagram.com/dsu_rcsoo_kole.nehtenin" target="_blank" rel="noopener noreferrer" class="text-sm text-onSurface/60 hover:text-onSurface flex items-center gap-1">
-                    <span class="material-symbols-outlined text-[18px]">camera_alt</span>
+                    <i class="ti ti-brand-instagram text-[18px]"></i>
                     Instagram
                 </a>
             </div>
@@ -88,7 +88,7 @@ $current_page = $page;
                             <img src="<?php echo htmlspecialchars($article["image_main"]); ?>" alt="<?php echo htmlspecialchars($article["title"]); ?>" class="w-full h-48 object-cover object-top">
                         <?php else: ?>
                             <div class="w-full h-48 bg-surfaceContainer flex items-center justify-center">
-                                <span class="material-symbols-outlined text-onSurface/20 text-6xl">newspaper</span>
+                                <i class="ti ti-news text-onSurface/20 text-6xl"></i>
                             </div>
                         <?php endif; ?>
                         <div class="p-5">

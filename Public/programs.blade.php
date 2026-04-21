@@ -12,7 +12,7 @@
     <section class="border-b border-surfaceContainer bg-primary/5">
         <div class="max-w-5xl mx-auto px-6 py-6">
             <div class="flex items-start gap-3">
-                <span class="material-symbols-outlined text-primary text-[24px] mt-0.5">info</span>
+                <i class="ti ti-info-circle text-primary text-[24px] mt-0.5"></i>
                 <div>
                     <p class="text-sm font-medium text-onSurface">Запишуваме 254 ученици во 8 паралелки за учебната 2026/2027 година.</p>
                     <a href="https://mon.gov.mk/mk-MK/odnosi-so-javnost/soopstenija/objaven-e-konkursot-za-upis-vo-sredni-ucilista-vo-ucebnata-2026-2027-godina" target="_blank" rel="noopener noreferrer" class="text-sm text-primary hover:underline mt-1 inline-block">Погледни го официјалниот конкурс &rarr;</a>

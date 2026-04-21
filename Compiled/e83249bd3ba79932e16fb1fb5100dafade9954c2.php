@@ -142,15 +142,37 @@
 
  <!-- Partner Companies -->
  <section class="border-t border-surfaceContainer py-16 px-6 max-w-5xl mx-auto">
- <h2 class="text-xl font-semibold text-onSurface mb-8">Партнерски компании</h2>
- <div class="flex gap-8 overflow-x-auto pb-4 items-center">
- <img src="/assets/images/companies/tm_doo.png" alt="ТМ ДОО" class="h-16 w-auto object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all">
- <img src="/assets/images/companies/aktiva_doo.jpg" alt="АКТИВА ДОО" class="h-16 w-auto object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all">
- <img src="/assets/images/companies/jp_hidrosistem_zletovica.png" alt="ЈП Хидросистем Злетовица" class="h-16 w-auto object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all">
- <img src="/assets/images/companies/jole_dooel.png" alt="ЈОЛЕ ДООЕЛ" class="h-16 w-auto object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all">
- <img src="/assets/images/companies/drvodekor_enterier.jpg" alt="Дрводекор Ентериер" class="h-16 w-auto object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all">
- <img src="/assets/images/companies/elektrodistribucija.jpg" alt="Електродистрибуција" class="h-16 w-auto object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all">
- <img src="/assets/images/companies/zdvil_lion.png" alt="ЗДВИЛ ЛИОН" class="h-16 w-auto object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all">
+ <h2 class="text-xl font-semibold text-onSurface">Партнерски компании</h2>
+ <p class="text-sm text-onSurface/50 mt-1 mb-8">Со кои соработуваме преку дуално образование.</p>
+ <div class="flex gap-8 overflow-x-auto pb-4">
+ <div class="flex flex-col items-center gap-2 flex-shrink-0">
+ <img src="/assets/images/companies/tm_doo.png" alt="ТМ ДОО" class="h-16 w-auto object-contain">
+ <span class="text-xs text-onSurface/60">ТМ ДОО</span>
+ </div>
+ <div class="flex flex-col items-center gap-2 flex-shrink-0">
+ <img src="/assets/images/companies/aktiva_doo.jpg" alt="АКТИВА ДОО" class="h-16 w-auto object-contain">
+ <span class="text-xs text-onSurface/60">АКТИВА ДОО</span>
+ </div>
+ <div class="flex flex-col items-center gap-2 flex-shrink-0">
+ <img src="/assets/images/companies/jp_hidrosistem_zletovica.png" alt="ЈП Хидросистем Злетовица" class="h-16 w-auto object-contain">
+ <span class="text-xs text-onSurface/60">ЈП Хидросистем Злетовица</span>
+ </div>
+ <div class="flex flex-col items-center gap-2 flex-shrink-0">
+ <img src="/assets/images/companies/jole_dooel.png" alt="ЈОЛЕ ДООЕЛ" class="h-16 w-auto object-contain">
+ <span class="text-xs text-onSurface/60">ЈОЛЕ ДООЕЛ</span>
+ </div>
+ <div class="flex flex-col items-center gap-2 flex-shrink-0">
+ <img src="/assets/images/companies/drvodekor_enterier.jpg" alt="Дрводекор Ентериер" class="h-16 w-auto object-contain">
+ <span class="text-xs text-onSurface/60">Дрводекор Ентериер</span>
+ </div>
+ <div class="flex flex-col items-center gap-2 flex-shrink-0">
+ <img src="/assets/images/companies/elektrodistribucija.jpg" alt="Електродистрибуција" class="h-16 w-auto object-contain">
+ <span class="text-xs text-onSurface/60">Електродистрибуција</span>
+ </div>
+ <div class="flex flex-col items-center gap-2 flex-shrink-0">
+ <img src="/assets/images/companies/zdvil_lion.png" alt="ЗДВИЛ ЛИОН" class="h-16 w-auto object-contain">
+ <span class="text-xs text-onSurface/60">ЗДВИЛ ЛИОН</span>
+ </div>
  </div>
  </section>
 

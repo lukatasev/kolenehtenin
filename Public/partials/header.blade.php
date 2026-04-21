@@ -19,11 +19,11 @@
         
         <div class="flex items-center gap-4">
             <a href="https://ednevnik.edu.mk" target="_blank" rel="noopener noreferrer" class="hidden md:flex items-center gap-1 text-primary text-sm hover:underline">
-                <span class="material-symbols-outlined text-[18px]">login</span>
+                <i class="ti ti-login text-[18px]"></i>
                 Е-Дневник
             </a>
             <button id="mobile-menu-btn" class="md:hidden text-onSurface">
-                <span class="material-symbols-outlined">menu</span>
+                <i class="ti ti-menu-2"></i>
             </button>
         </div>
     </div>
@@ -33,6 +33,7 @@
         <nav class="flex flex-col px-6 py-4 gap-4 text-sm">
             <a href="/about" class="text-onSurface/70 hover:text-onSurface transition-colors py-2">За нас</a>
             <a href="/programs" class="text-onSurface/70 hover:text-onSurface transition-colors py-2">Струки</a>
+            <a href="/gallery" class="text-onSurface/70 hover:text-onSurface transition-colors py-2">Галерија</a>
             <a href="/staff" class="text-onSurface/70 hover:text-onSurface transition-colors py-2">Вработени</a>
             <a href="/news" class="text-onSurface/70 hover:text-onSurface transition-colors py-2">Новости</a>
             <a href="/contact" class="text-onSurface/70 hover:text-onSurface transition-colors py-2">Контакт</a>
