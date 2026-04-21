@@ -141,10 +141,20 @@
 
     <!-- School Gallery -->
     <section class="border-t border-surfaceContainer py-16 px-6 max-w-5xl mx-auto">
-        <h2 class="text-xl font-semibold text-onSurface mb-8">Галерија</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <img src="/assets/images/school_photo1.jpg" alt="Училиште" class="w-full h-60 object-cover rounded-sm">
-            <img src="/assets/images/school_photo2.jpg" alt="Училиште" class="w-full h-60 object-cover rounded-sm">
+        <div class="flex items-end justify-between mb-8">
+            <div>
+                <h2 class="text-xl font-semibold text-onSurface">Галерија</h2>
+                <p class="text-sm text-onSurface/50 mt-1">Слики од училиштето.</p>
+            </div>
+            <a href="/gallery" class="hidden md:flex items-center gap-1 text-sm text-primary hover:underline">
+                Сите слики &rarr;
+            </a>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <img src="/assets/images/school_photo1.jpg" alt="Училиште" class="w-full h-60 object-cover rounded-sm cursor-pointer" data-lightbox>
+            <img src="/assets/images/school_photo2.jpg" alt="Училиште" class="w-full h-60 object-cover rounded-sm cursor-pointer" data-lightbox>
+            <img src="/assets/images/classroom1.jpg" alt="Училница" class="w-full h-60 object-cover rounded-sm cursor-pointer" data-lightbox>
+            <img src="/assets/images/day_of_school1.jpg" alt="Денот во училиште" class="w-full h-60 object-cover rounded-sm cursor-pointer" data-lightbox>
         </div>
     </section>
 

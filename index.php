@@ -8,6 +8,7 @@ $route->get("/programs", "programs");
 $route->get("/news", "news");
 $route->get("/contact", "contact");
 $route->get("/staff", "staff");
+$route->get("/gallery", "gallery");
 
 $page = $route->render_url($_SERVER["REQUEST_URI"], $GLOBALS);
 ?>

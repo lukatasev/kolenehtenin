@@ -11,6 +11,7 @@
  <nav class="hidden md:flex items-center gap-6 text-sm">
  <a href="/about" class="text-onSurface/70 hover:text-onSurface transition-colors">За нас</a>
  <a href="/programs" class="text-onSurface/70 hover:text-onSurface transition-colors">Струки</a>
+ <a href="/gallery" class="text-onSurface/70 hover:text-onSurface transition-colors">Галерија</a>
  <a href="/staff" class="text-onSurface/70 hover:text-onSurface transition-colors">Вработени</a>
  <a href="/news" class="text-onSurface/70 hover:text-onSurface transition-colors">Новости</a>
  <a href="/contact" class="text-onSurface/70 hover:text-onSurface transition-colors">Контакт</a>
@@ -40,8 +41,37 @@
  </div>
 </header>
 
+<!-- Lightbox Modal -->
+<div id="lightbox" class="fixed inset-0 bg-black/90 z-50 hidden flex items-center justify-center p-4">
+ <button id="lightbox-close" class="absolute top-4 right-4 text-white/70 hover:text-white text-4xl">&times;</button>
+ <img id="lightbox-img" src="" alt="" class="max-w-full max-h-[90vh] object-contain">
+</div>
+
 <script>
 document.getElementById('mobile-menu-btn').addEventListener('click', function() {
  document.getElementById('mobile-menu').classList.toggle('hidden');
+});
+
+// Lightbox functionality
+document.addEventListener('click', function(e) {
+ if (e.target.tagName === 'IMG' && e.target.closest('[data-lightbox]')) {
+ const lightbox = document.getElementById('lightbox');
+ const img = document.getElementById('lightbox-img');
+ img.src = e.target.src;
+ lightbox.classList.remove('hidden');
+ document.body.style.overflow = 'hidden';
+ }
+});
+
+document.getElementById('lightbox-close').addEventListener('click', function() {
+ document.getElementById('lightbox').classList.add('hidden');
+ document.body.style.overflow = '';
+});
+
+document.getElementById('lightbox').addEventListener('click', function(e) {
+ if (e.target.id === 'lightbox') {
+ this.classList.add('hidden');
+ document.body.style.overflow = '';
+ }
 });
 </script>

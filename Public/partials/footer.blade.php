@@ -15,6 +15,7 @@
             <ul class="space-y-2 text-sm text-onSurface/60">
                 <li><a href="/about" class="hover:text-onSurface transition-colors">За нас</a></li>
                 <li><a href="/programs" class="hover:text-onSurface transition-colors">Струки</a></li>
+                <li><a href="/gallery" class="hover:text-onSurface transition-colors">Галерија</a></li>
                 <li><a href="/news" class="hover:text-onSurface transition-colors">Новости</a></li>
                 <li><a href="/contact" class="hover:text-onSurface transition-colors">Контакт</a></li>
             </ul>
@@ -27,11 +28,12 @@
                 <li>+389 32 391 384</li>
                 <li>kontakt@kolenehtenin.edu.mk</li>
             </ul>
+            
         </div>
     </div>
     
     <div class="max-w-5xl mx-auto pt-6 border-t border-surfaceContainer flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-onSurface/40">
         <p>&copy; <?php echo date("Y"); ?> ДСУ РЦСОО „Коле Нехтенин" - Штип.</p>
-        <span>Веб-страница изработена од <a href="https://tasev.me" target="_blank" rel="noopener noreferrer" class="hover:text-onSurface text-onSurface/60 transition-colors">Лука Тасев</a></span>
+        <span>Изработена од <a href="https://tasev.me" target="_blank" rel="noopener noreferrer" class="hover:text-onSurface text-onSurface/60 transition-colors">Лука Тасев</a></span>
     </div>
 </footer>

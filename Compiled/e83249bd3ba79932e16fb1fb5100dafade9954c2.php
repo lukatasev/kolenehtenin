@@ -91,13 +91,67 @@
  </a>
  </section>
 
+ <!-- Recent News -->
+ <?php 
+ require_once __DIR__ . "/../api/db.php";
+ $stmt = $pdo->query("
+ SELECT id, slug, title, excerpt, date, image_main
+ FROM news
+ ORDER BY date DESC, id DESC
+ LIMIT 3
+ ");
+ $recentNews = $stmt->fetchAll();
+ ?>
+ 
+ <?php if(!empty($recentNews)): ?>
+ <section class="border-t border-surfaceContainer py-16 px-6 max-w-5xl mx-auto">
+ <div class="flex items-end justify-between mb-8">
+ <div>
+ <h2 class="text-xl font-semibold text-onSurface">Новости</h2>
+ <p class="text-sm text-onSurface/50 mt-1">Од училиштето и активностите.</p>
+ </div>
+ <a href="/news" class="hidden md:flex items-center gap-1 text-sm text-primary hover:underline">
+ Сите новости &rarr;
+ </a>
+ </div>
+ 
+ <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+ <?php $__currentLoopData = $recentNews; $this->addLoop($__currentLoopData);$this->getFirstLoop();
+ foreach($__currentLoopData as $news): $loop = $this->incrementLoopIndices();  ?>
+ <a href="/news?article=<?php echo \htmlentities($news['slug'], ENT_QUOTES, 'UTF-8', false); ?>" class="group flex flex-col bg-surface border border-surfaceContainer overflow-hidden hover:border-primary/40 transition-colors">
+ <?php if($news['image_main']): ?>
+ <div class="w-full h-40 overflow-hidden">
+ <img src="<?php echo \htmlentities($news['image_main'], ENT_QUOTES, 'UTF-8', false); ?>" alt="<?php echo \htmlentities($news['title'], ENT_QUOTES, 'UTF-8', false); ?>" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+ </div>
+ <?php endif; ?>
+ <div class="flex flex-col flex-grow p-5">
+ <p class="text-xs text-onSurface/50 mb-2"><?php echo \htmlentities(date('d.m.Y', strtotime($news['date'])), ENT_QUOTES, 'UTF-8', false); ?></p>
+ <h3 class="text-base font-semibold text-onSurface mb-2 group-hover:text-primary transition-colors line-clamp-2"><?php echo \htmlentities($news['title'], ENT_QUOTES, 'UTF-8', false); ?></h3>
+ <?php if($news['excerpt']): ?>
+ <p class="text-sm text-onSurface/60 flex-grow line-clamp-3"><?php echo \htmlentities($news['excerpt'], ENT_QUOTES, 'UTF-8', false); ?></p>
+ <?php endif; ?>
+ </div>
+ </a>
+ <?php endforeach; $this->popLoop(); $loop = $this->getFirstLoop(); ?>
+ </div>
+ <a href="/news" class="md:hidden mt-6 flex items-center justify-center gap-1 text-sm text-primary">
+ Сите новости &rarr;
+ </a>
+ </section>
+ <?php endif; ?>
+
  <!-- School Gallery -->
  <section class="border-t border-surfaceContainer py-16 px-6 max-w-5xl mx-auto">
  <h2 class="text-xl font-semibold text-onSurface mb-8">Галерија</h2>
- <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+ <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
  <img src="/assets/images/school_photo1.jpg" alt="Училиште" class="w-full h-60 object-cover rounded-sm">
  <img src="/assets/images/school_photo2.jpg" alt="Училиште" class="w-full h-60 object-cover rounded-sm">
+ <img src="/assets/images/classroom1.jpg" alt="Училница" class="w-full h-60 object-cover rounded-sm">
+ <img src="/assets/images/day_of_school1.jpg" alt="Денот во училиште" class="w-full h-60 object-cover rounded-sm">
  </div>
+ <a href="/gallery" class="mt-6 inline-flex items-center px-6 py-2.5 bg-primary text-onPrimary text-sm font-medium rounded-sm hover:opacity-90 transition-opacity block max-w-xs">
+ Погледнете ги сите снимки &rarr;
+ </a>
  </section>
 
 </main>

@@ -63,6 +63,16 @@ $current_page = $page;
         <div class="max-w-5xl mx-auto px-6 py-14">
             <h1 class="text-3xl font-semibold text-onSurface">Новости</h1>
             <p class="text-base text-onSurface/60 mt-2">Активности и постигнувања на учениците.</p>
+            <div class="flex gap-4 mt-4">
+                <a href="https://www.facebook.com/skolenehtenin" target="_blank" rel="noopener noreferrer" class="text-sm text-onSurface/60 hover:text-onSurface flex items-center gap-1">
+                    <span class="material-symbols-outlined text-[18px]">public</span>
+                    Facebook
+                </a>
+                <a href="https://www.instagram.com/dsu_rcsoo_kole.nehtenin" target="_blank" rel="noopener noreferrer" class="text-sm text-onSurface/60 hover:text-onSurface flex items-center gap-1">
+                    <span class="material-symbols-outlined text-[18px]">camera_alt</span>
+                    Instagram
+                </a>
+            </div>
         </div>
     </section>
 
