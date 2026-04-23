@@ -32,6 +32,6 @@
  
  <div class="max-w-5xl mx-auto pt-6 border-t border-surfaceContainer flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-onSurface/40">
  <p>&copy; <?php echo \htmlentities(date("Y"), ENT_QUOTES, 'UTF-8', false); ?> <?php echo \htmlentities(tr('school.name'), ENT_QUOTES, 'UTF-8', false); ?> - <?php echo \htmlentities(tr('school.city'), ENT_QUOTES, 'UTF-8', false); ?>. <?php echo \htmlentities(tr('footer.rights'), ENT_QUOTES, 'UTF-8', false); ?></p>
- <span><?php echo \htmlentities(tr('footer.created_by'), ENT_QUOTES, 'UTF-8', false); ?> <a href="https://tasev.me" target="_blank" rel="noopener noreferrer" class="hover:text-onSurface text-onSurface/60 transition-colors">Лука Тасев</a></span>
+ <span><?php echo \htmlentities(tr('footer.created_by'), ENT_QUOTES, 'UTF-8', false); ?> <a href="https://tasev.me" target="_blank" rel="noopener noreferrer" class="hover:text-onSurface text-onSurface/60 transition-colors"><?php echo \htmlentities(tr('footer.author'), ENT_QUOTES, 'UTF-8', false); ?></a></span>
  </div>
 </footer>

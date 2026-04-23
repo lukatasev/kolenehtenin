@@ -49,7 +49,7 @@
  <details class="border border-surfaceContainer group">
  <summary class="p-5 cursor-pointer flex items-center justify-between text-onSurface hover:bg-surfaceContainer/30 transition-colors">
  <div class="flex flex-col gap-3 flex-grow">
- <span class="text-base font-medium">Електротехничар за компјутерска техника и автоматика</span>
+ <span class="text-base font-medium"><?php echo \htmlentities(tr('programs.electro.profiles.computer_tech.name'), ENT_QUOTES, 'UTF-8', false); ?></span>
  <div class="flex flex-wrap gap-2">
  <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm"><?php echo \htmlentities(tr('programs.years', ['n' => '4']), ENT_QUOTES, 'UTF-8', false); ?></span>
  <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-sm"><?php echo \htmlentities(tr('programs.min_points', ['points' => '60']), ENT_QUOTES, 'UTF-8', false); ?></span>
@@ -60,21 +60,17 @@
  <div class="px-5 pb-5 pt-2 border-t border-surfaceContainer text-sm text-onSurface/70">
  <p class="mb-2 font-medium text-onSurface"><?php echo \htmlentities(tr('programs.trained_for'), ENT_QUOTES, 'UTF-8', false); ?></p>
  <ul class="list-disc pl-5 space-y-1 leading-relaxed">
- <li>да ги применува законите на електротехниката во управувањето со компјутерски системи;</li>
- <li>да ги подготвува компјутерите за корисниците;</li>
- <li>да го одржува алатот, приборот, инструментите и уредите;</li>
- <li>да ја контролира исправноста на компјутерската техника;</li>
- <li>да истражува, контролира и поправа грешки на ниво на компјутерската техника;</li>
- <li>да избере мерни инструменти за контрола и пребарување на грешки;</li>
- <li>да користи и да изготвува техничка документација;</li>
- <li>да ја монтира, инсталира и користи опрема;</li>
- <li>да прилагоди и модифицира опрема со помош на прирачници, дијаграми итн.;</li>
- <li>да ги процени можните и најисплатливите економски поправки во зависност од желбата на корисникот;</li>
- <li>да ги планира и организира работните задачи;</li>
+ <?php  $items = explode(';', tr('programs.electro.profiles.computer_tech.description'));  ?>
+ <?php $__currentLoopData = $items; $this->addLoop($__currentLoopData);$this->getFirstLoop();
+ foreach($__currentLoopData as $item): $loop = $this->incrementLoopIndices();  ?>
+ <?php if(trim($item)): ?>
+ <li><?php echo \htmlentities(trim($item), ENT_QUOTES, 'UTF-8', false); ?></li>
+ <?php endif; ?>
+ <?php endforeach; $this->popLoop(); $loop = $this->getFirstLoop(); ?>
  </ul>
  <div class="mt-4 flex flex-wrap gap-2">
- <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm">68 <?php echo \htmlentities(tr('programs.students'), ENT_QUOTES, 'UTF-8', false); ?></span>
- <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm">2 <?php echo \htmlentities(tr('programs.classes'), ENT_QUOTES, 'UTF-8', false); ?></span>
+ <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm"><?php echo \htmlentities(tr('programs.electro.profiles.computer_tech.student_count'), ENT_QUOTES, 'UTF-8', false); ?> <?php echo \htmlentities(tr('programs.students'), ENT_QUOTES, 'UTF-8', false); ?></span>
+ <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm"><?php echo \htmlentities(tr('programs.electro.profiles.computer_tech.class_count'), ENT_QUOTES, 'UTF-8', false); ?> <?php echo \htmlentities(tr('programs.classes'), ENT_QUOTES, 'UTF-8', false); ?></span>
  </div>
  </div>
  </details>
@@ -82,7 +78,7 @@
  <details class="border border-surfaceContainer group">
  <summary class="p-5 cursor-pointer flex items-center justify-between text-onSurface hover:bg-surfaceContainer/30 transition-colors">
  <div class="flex flex-col gap-3 flex-grow">
- <span class="text-base font-medium">Електротехничар &ndash; енергетичар</span>
+ <span class="text-base font-medium"><?php echo \htmlentities(tr('programs.electro.profiles.energetics.name'), ENT_QUOTES, 'UTF-8', false); ?></span>
  <div class="flex flex-wrap gap-2">
  <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm"><?php echo \htmlentities(tr('programs.years', ['n' => '4']), ENT_QUOTES, 'UTF-8', false); ?></span>
  <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-sm"><?php echo \htmlentities(tr('programs.min_points', ['points' => '45']), ENT_QUOTES, 'UTF-8', false); ?></span>
@@ -94,18 +90,12 @@
  <div class="px-5 pb-5 pt-2 border-t border-surfaceContainer text-sm text-onSurface/70">
  <p class="mb-2 font-medium text-onSurface"><?php echo \htmlentities(tr('programs.trained_for'), ENT_QUOTES, 'UTF-8', false); ?></p>
  <ul class="list-disc pl-5 space-y-1 leading-relaxed">
- <li>да ги применува електротехничките законитости;</li>
- <li>да го познава принципот на работа и карактеристиките на електричните машини, апарати и инсталации;</li>
- <li>да ја испитува исправноста на електричните машини, апарати и инсталации;</li>
- <li>да ги лоцира дефектите на електричните машини, апарати и инсталации;</li>
- <li>да ја контролира исправноста на електричните машини, апарати и инсталации;</li>
- <li>да се служи со електричните мерни инструменти и уреди;</li>
- <li>да монтира и демонтира кабли и да изведува соодветни споеви;</li>
- <li>да монтира и демонтира електрични машини, апарати и уреди;</li>
- <li>да заменува делови во електрични машини, апарати и уреди;</li>
- <li>да изработува намотки за електрични машини, апарати и уреди;</li>
- <li>да организира и применува хигиено &ndash; техничка заштита;</li>
- <li>да води мал бизнис;</li>
+ <?php $__currentLoopData = explode(';', tr('programs.electro.profiles.energetics.description')); $this->addLoop($__currentLoopData);$this->getFirstLoop();
+ foreach($__currentLoopData as $item): $loop = $this->incrementLoopIndices();  ?>
+ <?php if(trim($item)): ?>
+ <li><?php echo \htmlentities(trim($item), ENT_QUOTES, 'UTF-8', false); ?></li>
+ <?php endif; ?>
+ <?php endforeach; $this->popLoop(); $loop = $this->getFirstLoop(); ?>
  </ul>
  <p class="mt-3 font-medium text-onSurface"><?php echo \htmlentities(tr('programs.partner_companies'), ENT_QUOTES, 'UTF-8', false); ?></p>
  <div class="mt-2 flex gap-4 items-center">
@@ -117,8 +107,8 @@
  <img src="/assets/images/companies/zdvil_lion.png" alt="ЗДВИЛ ЛИОН" class="h-8 w-auto object-contain">
  </div>
  <div class="mt-4 flex flex-wrap gap-2">
- <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm">25 <?php echo \htmlentities(tr('programs.students'), ENT_QUOTES, 'UTF-8', false); ?></span>
- <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm">1 <?php echo \htmlentities(tr('programs.classes'), ENT_QUOTES, 'UTF-8', false); ?></span>
+ <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm"><?php echo \htmlentities(tr('programs.electro.profiles.energetics.student_count'), ENT_QUOTES, 'UTF-8', false); ?> <?php echo \htmlentities(tr('programs.students'), ENT_QUOTES, 'UTF-8', false); ?></span>
+ <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm"><?php echo \htmlentities(tr('programs.electro.profiles.energetics.class_count'), ENT_QUOTES, 'UTF-8', false); ?> <?php echo \htmlentities(tr('programs.classes'), ENT_QUOTES, 'UTF-8', false); ?></span>
  </div>
  </div>
  </details>
@@ -126,7 +116,7 @@
  <details class="border border-surfaceContainer group">
  <summary class="p-5 cursor-pointer flex items-center justify-between text-onSurface hover:bg-surfaceContainer/30 transition-colors">
  <div class="flex flex-col gap-3 flex-grow">
- <span class="text-base font-medium">Електротехничар за електроника и телекомуникации</span>
+ <span class="text-base font-medium"><?php echo \htmlentities(tr('programs.electro.profiles.electronics.name'), ENT_QUOTES, 'UTF-8', false); ?></span>
  <div class="flex flex-wrap gap-2">
  <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm"><?php echo \htmlentities(tr('programs.years', ['n' => '4']), ENT_QUOTES, 'UTF-8', false); ?></span>
  <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-sm"><?php echo \htmlentities(tr('programs.min_points', ['points' => '50']), ENT_QUOTES, 'UTF-8', false); ?></span>
@@ -137,18 +127,16 @@
  <div class="px-5 pb-5 pt-2 border-t border-surfaceContainer text-sm text-onSurface/70">
  <p class="mb-2 font-medium text-onSurface"><?php echo \htmlentities(tr('programs.trained_for'), ENT_QUOTES, 'UTF-8', false); ?></p>
  <ul class="list-disc pl-5 space-y-1 leading-relaxed">
- <li>да ги применува законите на електротехниката;</li>
- <li>да го користи компјутерот за електрични шеми;</li>
- <li>да открива и отстранува дефекти;</li>
- <li>да се служи и изготвува техничка документација;</li>
- <li>да тестира и контролира електронски уреди;</li>
- <li>да ја одржува и заштитува опремата;</li>
- <li>да врши мерења и користи инструменти;</li>
- <li>да користи наменски програмски пакети;</li>
+ <?php $__currentLoopData = explode(';', tr('programs.electro.profiles.electronics.description')); $this->addLoop($__currentLoopData);$this->getFirstLoop();
+ foreach($__currentLoopData as $item): $loop = $this->incrementLoopIndices();  ?>
+ <?php if(trim($item)): ?>
+ <li><?php echo \htmlentities(trim($item), ENT_QUOTES, 'UTF-8', false); ?></li>
+ <?php endif; ?>
+ <?php endforeach; $this->popLoop(); $loop = $this->getFirstLoop(); ?>
  </ul>
  <div class="mt-4 flex flex-wrap gap-2">
- <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm">34 <?php echo \htmlentities(tr('programs.students'), ENT_QUOTES, 'UTF-8', false); ?></span>
- <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm">1 <?php echo \htmlentities(tr('programs.classes'), ENT_QUOTES, 'UTF-8', false); ?></span>
+ <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm"><?php echo \htmlentities(tr('programs.electro.profiles.electronics.student_count'), ENT_QUOTES, 'UTF-8', false); ?> <?php echo \htmlentities(tr('programs.students'), ENT_QUOTES, 'UTF-8', false); ?></span>
+ <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm"><?php echo \htmlentities(tr('programs.electro.profiles.electronics.class_count'), ENT_QUOTES, 'UTF-8', false); ?> <?php echo \htmlentities(tr('programs.classes'), ENT_QUOTES, 'UTF-8', false); ?></span>
  </div>
  </div>
  </details>
@@ -179,7 +167,7 @@
  <details class="border border-surfaceContainer group">
  <summary class="p-5 cursor-pointer flex items-center justify-between text-onSurface hover:bg-surfaceContainer/30 transition-colors">
  <div class="flex flex-col gap-3 flex-grow">
- <span class="text-base font-medium">Техничар за компјутерско управување / Машински техничар</span>
+ <span class="text-base font-medium"><?php echo \htmlentities(tr('programs.machine.profiles.cnc.name'), ENT_QUOTES, 'UTF-8', false); ?></span>
  <div class="flex flex-wrap gap-2">
  <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm"><?php echo \htmlentities(tr('programs.years', ['n' => '4']), ENT_QUOTES, 'UTF-8', false); ?></span>
  <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-sm"><?php echo \htmlentities(tr('programs.min_points', ['points' => '45']), ENT_QUOTES, 'UTF-8', false); ?></span>
@@ -191,16 +179,12 @@
  <div class="px-5 pb-5 pt-2 border-t border-surfaceContainer text-sm text-onSurface/70">
  <p class="mb-2 font-medium text-onSurface"><?php echo \htmlentities(tr('programs.trained_for'), ENT_QUOTES, 'UTF-8', false); ?></p>
  <ul class="list-disc pl-5 space-y-1 leading-relaxed">
- <li>да моделира и конструира машински елементи и склопови со компјутер;</li>
- <li>да конфигурира електропневматски и хидраулични системи;</li>
- <li>да програмира програмабилни логички контролери;</li>
- <li>да програмира компјутерски управувани машини;</li>
- <li>примена на CAD &ndash; CAM технологии;</li>
- <li>да проектира производствени технолошки процеси и системи;</li>
- <li>да го контролира квалитетот на готовите производи;</li>
- <li>да идентификува неисправности на компјутерски управувани машини и системи настанати во тек на експлоатацијата;</li>
- <li>да се грижи за хигиенско &ndash; техничката заштита;</li>
- <li>да се грижи за заштита на животната средина;</li>
+ <?php $__currentLoopData = explode(';', tr('programs.machine.profiles.cnc.description')); $this->addLoop($__currentLoopData);$this->getFirstLoop();
+ foreach($__currentLoopData as $item): $loop = $this->incrementLoopIndices();  ?>
+ <?php if(trim($item)): ?>
+ <li><?php echo \htmlentities(trim($item), ENT_QUOTES, 'UTF-8', false); ?></li>
+ <?php endif; ?>
+ <?php endforeach; $this->popLoop(); $loop = $this->getFirstLoop(); ?>
  </ul>
  <p class="mt-3 font-medium text-onSurface"><?php echo \htmlentities(tr('programs.partner_companies'), ENT_QUOTES, 'UTF-8', false); ?></p>
  <div class="mt-2 flex gap-4 items-center">
@@ -208,8 +192,8 @@
  <img src="/assets/images/companies/aktiva_doo.jpg" alt="АКТИВА ДОО" class="h-8 w-auto object-contain">
  </div>
  <div class="mt-4 flex flex-wrap gap-2">
- <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm">25 <?php echo \htmlentities(tr('programs.students'), ENT_QUOTES, 'UTF-8', false); ?></span>
- <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm">1 <?php echo \htmlentities(tr('programs.classes'), ENT_QUOTES, 'UTF-8', false); ?></span>
+ <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm"><?php echo \htmlentities(tr('programs.machine.profiles.cnc.student_count'), ENT_QUOTES, 'UTF-8', false); ?> <?php echo \htmlentities(tr('programs.students'), ENT_QUOTES, 'UTF-8', false); ?></span>
+ <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm"><?php echo \htmlentities(tr('programs.machine.profiles.cnc.class_count'), ENT_QUOTES, 'UTF-8', false); ?> <?php echo \htmlentities(tr('programs.classes'), ENT_QUOTES, 'UTF-8', false); ?></span>
  </div>
  </div>
  </details>
@@ -217,7 +201,7 @@
  <details class="border border-surfaceContainer group">
  <summary class="p-5 cursor-pointer flex items-center justify-between text-onSurface hover:bg-surfaceContainer/30 transition-colors">
  <div class="flex flex-col gap-3 flex-grow">
- <span class="text-base font-medium">Машински техничар за моторни возила / Машинско-енергетски техничар</span>
+ <span class="text-base font-medium"><?php echo \htmlentities(tr('programs.machine.profiles.vehicles.name'), ENT_QUOTES, 'UTF-8', false); ?></span>
  <div class="flex flex-wrap gap-2">
  <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm"><?php echo \htmlentities(tr('programs.years', ['n' => '4']), ENT_QUOTES, 'UTF-8', false); ?></span>
  <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-sm"><?php echo \htmlentities(tr('programs.min_points', ['points' => '45']), ENT_QUOTES, 'UTF-8', false); ?></span>
@@ -228,18 +212,16 @@
  <div class="px-5 pb-5 pt-2 border-t border-surfaceContainer text-sm text-onSurface/70">
  <p class="mb-2 font-medium text-onSurface"><?php echo \htmlentities(tr('programs.trained_for'), ENT_QUOTES, 'UTF-8', false); ?></p>
  <ul class="list-disc pl-5 space-y-1 leading-relaxed">
- <li>да ги применува законитостите од механиката, хидрауликата и топлотехниката;</li>
- <li>да организира работни задачи од областа на механизацијата и автоматизацијата во производните и непроизводните процеси;</li>
- <li>да применува теоретски знаења за машинските елементи во машинското производство;</li>
- <li>да го користи компјутерот за изготвување на технички дизајн;</li>
- <li>да ја користи компјутерстката библиотека за Autocad;</li>
- <li>да го одржува алатот, приборот и машините;</li>
- <li>да ја контролира исправноста на машините, алатите и точноста на габаритите на машинските елементи;</li>
- <li>да монтира машински елементи;</li>
+ <?php $__currentLoopData = explode(';', tr('programs.machine.profiles.vehicles.description')); $this->addLoop($__currentLoopData);$this->getFirstLoop();
+ foreach($__currentLoopData as $item): $loop = $this->incrementLoopIndices();  ?>
+ <?php if(trim($item)): ?>
+ <li><?php echo \htmlentities(trim($item), ENT_QUOTES, 'UTF-8', false); ?></li>
+ <?php endif; ?>
+ <?php endforeach; $this->popLoop(); $loop = $this->getFirstLoop(); ?>
  </ul>
  <div class="mt-4 flex flex-wrap gap-2">
- <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm">34 <?php echo \htmlentities(tr('programs.students'), ENT_QUOTES, 'UTF-8', false); ?></span>
- <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm">1 <?php echo \htmlentities(tr('programs.classes'), ENT_QUOTES, 'UTF-8', false); ?></span>
+ <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm"><?php echo \htmlentities(tr('programs.machine.profiles.vehicles.student_count'), ENT_QUOTES, 'UTF-8', false); ?> <?php echo \htmlentities(tr('programs.students'), ENT_QUOTES, 'UTF-8', false); ?></span>
+ <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm"><?php echo \htmlentities(tr('programs.machine.profiles.vehicles.class_count'), ENT_QUOTES, 'UTF-8', false); ?> <?php echo \htmlentities(tr('programs.classes'), ENT_QUOTES, 'UTF-8', false); ?></span>
  </div>
  </div>
  </details>
@@ -247,7 +229,7 @@
  <details class="border border-surfaceContainer group">
  <summary class="p-5 cursor-pointer flex items-center justify-between text-onSurface hover:bg-surfaceContainer/30 transition-colors">
  <div class="flex flex-col gap-3 flex-grow">
- <span class="text-base font-medium">Машински механичар / Конструкциски механичар</span>
+ <span class="text-base font-medium"><?php echo \htmlentities(tr('programs.machine.profiles.mechanic.name'), ENT_QUOTES, 'UTF-8', false); ?></span>
  <div class="flex flex-wrap gap-2">
  <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm"><?php echo \htmlentities(tr('programs.years', ['n' => '3']), ENT_QUOTES, 'UTF-8', false); ?></span>
  <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-sm"><?php echo \htmlentities(tr('programs.min_points', ['points' => '30']), ENT_QUOTES, 'UTF-8', false); ?></span>
@@ -258,15 +240,16 @@
  <div class="px-5 pb-5 pt-2 border-t border-surfaceContainer text-sm text-onSurface/70">
  <p class="mb-2 font-medium text-onSurface"><?php echo \htmlentities(tr('programs.trained_for'), ENT_QUOTES, 'UTF-8', false); ?></p>
  <ul class="list-disc pl-5 space-y-1 leading-relaxed">
- <li>одржување и поправка на машини и системи;</li>
- <li>монтирање и демонтирање делови и групи од елементи;</li>
- <li>лоцирање и отстранување неисправности;</li>
- <li>прилагодување, преправање и проширување погонски системи;</li>
- <li>изработување резервни делови и конструкциски елементи.</li>
+ <?php $__currentLoopData = explode(';', tr('programs.machine.profiles.mechanic.description')); $this->addLoop($__currentLoopData);$this->getFirstLoop();
+ foreach($__currentLoopData as $item): $loop = $this->incrementLoopIndices();  ?>
+ <?php if(trim($item)): ?>
+ <li><?php echo \htmlentities(trim($item), ENT_QUOTES, 'UTF-8', false); ?></li>
+ <?php endif; ?>
+ <?php endforeach; $this->popLoop(); $loop = $this->getFirstLoop(); ?>
  </ul>
  <div class="mt-4 flex flex-wrap gap-2">
- <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm">34 <?php echo \htmlentities(tr('programs.students'), ENT_QUOTES, 'UTF-8', false); ?></span>
- <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm">1 <?php echo \htmlentities(tr('programs.classes'), ENT_QUOTES, 'UTF-8', false); ?></span>
+ <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm"><?php echo \htmlentities(tr('programs.machine.profiles.mechanic.student_count'), ENT_QUOTES, 'UTF-8', false); ?> <?php echo \htmlentities(tr('programs.students'), ENT_QUOTES, 'UTF-8', false); ?></span>
+ <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm"><?php echo \htmlentities(tr('programs.machine.profiles.mechanic.class_count'), ENT_QUOTES, 'UTF-8', false); ?> <?php echo \htmlentities(tr('programs.classes'), ENT_QUOTES, 'UTF-8', false); ?></span>
  </div>
  </div>
  </details>
@@ -297,7 +280,7 @@
  <details class="border border-surfaceContainer group">
  <summary class="p-5 cursor-pointer flex items-center justify-between text-onSurface hover:bg-surfaceContainer/30 transition-colors">
  <div class="flex flex-col gap-3 flex-grow">
- <span class="text-base font-medium">Келнер / Готвач</span>
+ <span class="text-base font-medium"><?php echo \htmlentities(tr('programs.hospitality.profiles.waiter_cook.name'), ENT_QUOTES, 'UTF-8', false); ?></span>
  <div class="flex flex-wrap gap-2">
  <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm"><?php echo \htmlentities(tr('programs.years', ['n' => '3']), ENT_QUOTES, 'UTF-8', false); ?></span>
  <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-sm"><?php echo \htmlentities(tr('programs.min_points', ['points' => '30']), ENT_QUOTES, 'UTF-8', false); ?></span>
@@ -306,12 +289,10 @@
  <span class="text-onSurface/40 group-open:rotate-180 transition-transform text-sm">&darr;</span>
  </summary>
  <div class="px-5 pb-5 pt-2 border-t border-surfaceContainer text-sm text-onSurface/70">
- <p class="leading-relaxed">
- Учениците кои ќе се запишат на образовниот профил келнер &ndash; готвач ќе се здобијат со знаење од областа на географијата, информатиката, математиката и од областа на останатите општообразовни предмети. Учениците се здобиваат и со стручно знаење од областа на хигиената, готварството, храната и пијалоците, психологијата, декорацијата во готварството, посложувањето. Учениците имаат и практична настава.
- </p>
+ <p class="leading-relaxed"><?php echo \htmlentities(tr('programs.hospitality.profiles.waiter_cook.description'), ENT_QUOTES, 'UTF-8', false); ?></p>
  <div class="mt-4 flex flex-wrap gap-2">
- <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm">34 <?php echo \htmlentities(tr('programs.students'), ENT_QUOTES, 'UTF-8', false); ?></span>
- <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm">1 <?php echo \htmlentities(tr('programs.classes'), ENT_QUOTES, 'UTF-8', false); ?></span>
+ <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm"><?php echo \htmlentities(tr('programs.hospitality.profiles.waiter_cook.student_count'), ENT_QUOTES, 'UTF-8', false); ?> <?php echo \htmlentities(tr('programs.students'), ENT_QUOTES, 'UTF-8', false); ?></span>
+ <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm"><?php echo \htmlentities(tr('programs.hospitality.profiles.waiter_cook.class_count'), ENT_QUOTES, 'UTF-8', false); ?> <?php echo \htmlentities(tr('programs.classes'), ENT_QUOTES, 'UTF-8', false); ?></span>
  </div>
  </div>
  </details>
