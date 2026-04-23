@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kolenehtenin.tasev.me/sitemap.xml
+
+# Disallow access to sensitive directories
+Disallow: /Art/
+Disallow: /api/
+Disallow: /assets/css/
+Disallow: /assets/js/
+Disallow: /Compiled/
+Disallow: /Public/
+
+# Crawl-delay (optional, for polite crawling)
+Crawl-delay: 1

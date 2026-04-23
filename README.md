@@ -1,16 +1,46 @@
-Content Issues:
-- No working hours on the contact page
-- No links to other platforms — Besides E-Дневник, there's likely E-Училиште, Matura portal, etc.
+# ДСУ РЦСОО „Коле Нехтенин" - Штип
 
-UX Issues:
-- No breadcrumbs on inner pages
-- No print styles — Parents often print program/staff info
+Регионален центар за стручно образование и обука со повеќе од 60 години традиција.
 
-Technical/SEO:
-- No meta descriptions or Open Graph tags
-- No sitemap.xml or robots.txt
-- No structured data (School schema for Google)
+## 🏫 За училиштето
 
-### Todos
-- More news posts (has to be done by human)
-- documents / links / downloads page
+Средно стручно училиште „Коле Нехтенин" во Штип е водечка образовна институција во источниот регион на Македонија. Училиштето нуди три струки:
+
+- **Електротехничка** - Компјутерска техника, Енергетика, Електроника
+- **Машинска** - CNC техничар, Мехатроника, Автомеханика
+- **Угостителско-туристичка** - Келнер/Готвач
+
+## 🌐 Мултијазична поддршка
+
+- Македонски (MK)
+- English (EN)
+- Türkçe (TR)
+- Shqip (SQ)
+
+## 🛠️ Технологии
+
+- PHP (BladeOne темплејти)
+- Tailwind CSS
+- Tabler Icons
+
+## 📄 Страници
+
+- Почетна
+- За нас
+- Струки / Програми
+- Вработени
+- Новости
+- Галерија
+- Корисни линкови
+- Контакт
+
+## 📍 Контакт
+
+- 📍 Бул. Гоце Делчев бр. 101, Штип 2000
+- 📞 +389 32 391 384
+- 📧 kontakt@kolenehtenin.edu.mk
+- 📱 Facebook | Instagram
+
+---
+
+© 2026 ДСУ РЦСОО „Коле Нехтенин" - Штип
