@@ -4,7 +4,7 @@
  <!-- Header -->
  <section class="border-b border-surfaceContainer bg-surfaceContainer/30">
  <div class="max-w-5xl mx-auto px-6 py-14">
- <h1 class="text-3xl font-semibold text-onSurface">Контакт</h1>
+ <h1 class="text-3xl font-semibold text-onSurface"><?php echo \htmlentities(tr('contact.title'), ENT_QUOTES, 'UTF-8', false); ?></h1>
  </div>
  </section>
 
@@ -15,7 +15,7 @@
  <div class="flex items-start gap-3">
  <i class="ti ti-map-pin text-onSurface/40 text-[22px] mt-0.5"></i>
  <div>
- <h3 class="text-sm font-semibold text-onSurface uppercase tracking-wider mb-1">Адреса</h3>
+ <h3 class="text-sm font-semibold text-onSurface uppercase tracking-wider mb-1"><?php echo \htmlentities(tr('contact.address'), ENT_QUOTES, 'UTF-8', false); ?></h3>
  <p class="text-onSurface/70">Булевар Гоце Делчев бр. 101<br>2000 Штип, Македонија</p>
  </div>
  </div>
@@ -23,7 +23,7 @@
  <div class="flex items-start gap-3">
  <i class="ti ti-phone text-onSurface/40 text-[22px] mt-0.5"></i>
  <div>
- <h3 class="text-sm font-semibold text-onSurface uppercase tracking-wider mb-1">Телефон</h3>
+ <h3 class="text-sm font-semibold text-onSurface uppercase tracking-wider mb-1"><?php echo \htmlentities(tr('contact.phone'), ENT_QUOTES, 'UTF-8', false); ?></h3>
  <p class="text-onSurface/70">
  <a href="tel:+38932391384" class="hover:text-onSurface transition-colors">+389 32 391 384</a><br>
  <a href="tel:+38932607384" class="hover:text-onSurface transition-colors">+389 32 607 384</a>
@@ -34,7 +34,7 @@
  <div class="flex items-start gap-3">
  <i class="ti ti-mail text-onSurface/40 text-[22px] mt-0.5"></i>
  <div>
- <h3 class="text-sm font-semibold text-onSurface uppercase tracking-wider mb-1">Е-пошта</h3>
+ <h3 class="text-sm font-semibold text-onSurface uppercase tracking-wider mb-1"><?php echo \htmlentities(tr('contact.email'), ENT_QUOTES, 'UTF-8', false); ?></h3>
  <p class="text-onSurface/70">
  <a href="mailto:kontakt@kolenehtenin.edu.mk" class="hover:text-onSurface transition-colors">kontakt@kolenehtenin.edu.mk</a><br>
  <a href="mailto:kontakt.kolenehtenin@gmail.com" class="hover:text-onSurface transition-colors">kontakt.kolenehtenin@gmail.com</a>
@@ -45,7 +45,7 @@
  <div class="flex items-start gap-3">
  <i class="ti ti-share text-onSurface/40 text-[22px] mt-0.5"></i>
  <div>
- <h3 class="text-sm font-semibold text-onSurface uppercase tracking-wider mb-1">Социјални мрежи</h3>
+ <h3 class="text-sm font-semibold text-onSurface uppercase tracking-wider mb-1"><?php echo \htmlentities(tr('contact.social'), ENT_QUOTES, 'UTF-8', false); ?></h3>
  <div class="flex gap-3 text-onSurface/70">
  <a href="https://www.facebook.com/skolenehtenin" target="_blank" rel="noopener noreferrer" class="hover:text-onSurface transition-colors flex items-center gap-1">
  <i class="ti ti-brand-facebook text-[20px]"></i>

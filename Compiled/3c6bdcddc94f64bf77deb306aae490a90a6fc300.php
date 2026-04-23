@@ -1,25 +1,5 @@
 <?php defined("INDLUCE_CHECK") || die("404"); ?><?php
-$months = [
- "01" => "Јануари", "02" => "Февруари", "03" => "Март",
- "04" => "Април", "05" => "Мај", "06" => "Јуни",
- "07" => "Јули", "08" => "Август", "09" => "Септември",
- "10" => "Октомври", "11" => "Ноември", "12" => "Декември"
-];
-
-$months_en = [
- "01" => "January", "02" => "February", "03" => "March",
- "04" => "April", "05" => "May", "06" => "June",
- "07" => "July", "08" => "August", "09" => "September",
- "10" => "October", "11" => "November", "12" => "December"
-];
-
-function formatDate($date, $months) {
- $parts = explode("-", $date);
- $day = ltrim($parts[2], "0");
- $month = $months[$parts[1]];
- $year = $parts[0];
- return "$day $month, $year";
-}
+require_once __DIR__ . "/../api/db.php";
 
 function truncateExcerpt($text, $maxChars = 180) {
  $text = strip_tags($text);
@@ -40,19 +20,17 @@ function formatExcerpt($text) {
  return nl2br($escaped);
 }
 
-require_once __DIR__ . "/../api/db.php";
+function formatDate($date, $months) {
+ $parts = explode("-", $date);
+ $day = ltrim($parts[2], "0");
+ $month = $months[$parts[1]];
+ $year = $parts[0];
+ return "$day $month, $year";
+}
+
 $page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
 $limit = 12;
 $offset = ($page - 1) * $limit;
-
-$lang = 'mk';
-if (isset($_GET['lang'])) {
- $lang = strtolower(substr($_GET['lang'], 0, 2));
-} elseif (isset($_COOKIE['lang'])) {
- $lang = strtolower(substr($_COOKIE['lang'], 0, 2));
-}
-if (!in_array($lang, ['mk','en','tr'])) $lang = 'mk';
-$monthData = $lang === 'en' ? $months_en : $months;
 
 $stmt = $pdo->prepare("
  SELECT id, slug, title, excerpt, content, date, category, source_url,
@@ -70,6 +48,7 @@ $totalStmt = $pdo->query("SELECT COUNT(*) FROM news");
 $total = (int)$totalStmt->fetchColumn();
 $total_pages = (int)ceil($total / $limit);
 $current_page = $page;
+$months = tr('months');
 ?>
 <?php echo $this->runChild('partials.header'); ?>
 
@@ -108,7 +87,7 @@ $current_page = $page;
  </div>
  <?php endif; ?>
  <div class="p-5">
- <span class="text-xs text-onSurface/40 mb-2 block"><?php echo formatDate($article["date"], $monthData); ?></span>
+ <span class="text-xs text-onSurface/40 mb-2 block"><?php echo formatDate($article["date"], $months); ?></span>
  <h3 class="text-base font-semibold text-onSurface mb-2 leading-tight"><?php echo htmlspecialchars($article["title"]); ?></h3>
  <p class="text-sm text-onSurface/60 leading-relaxed line-clamp-[6]">
  <?php echo formatExcerpt(truncateExcerpt($article["excerpt"], 300)); ?>

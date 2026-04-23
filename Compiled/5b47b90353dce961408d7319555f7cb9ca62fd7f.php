@@ -18,8 +18,8 @@ $images = [
 <main class="w-full flex-grow">
  <section class="border-b border-surfaceContainer bg-surfaceContainer/30">
  <div class="max-w-5xl mx-auto px-6 py-14">
- <h1 class="text-3xl font-semibold text-onSurface">Галерија</h1>
- <p class="text-base text-onSurface/60 mt-2">Нашите фотографии од училиштето</p>
+ <h1 class="text-3xl font-semibold text-onSurface"><?php echo \htmlentities(tr('gallery.title'), ENT_QUOTES, 'UTF-8', false); ?></h1>
+ <p class="text-base text-onSurface/60 mt-2"><?php echo \htmlentities(tr('gallery.subtitle'), ENT_QUOTES, 'UTF-8', false); ?></p>
  </div>
  </section>
 
@@ -34,7 +34,7 @@ $images = [
  <?php endforeach; $this->popLoop(); $loop = $this->getFirstLoop(); ?>
  </div>
  <?php else: ?>
- <p class="text-onSurface/60 text-center py-12">No images available</p>
+ <p class="text-onSurface/60 text-center py-12"><?php echo \htmlentities(tr('gallery.no_images'), ENT_QUOTES, 'UTF-8', false); ?></p>
  <?php endif; ?>
  </section>
  

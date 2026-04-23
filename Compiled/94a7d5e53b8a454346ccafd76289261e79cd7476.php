@@ -18,12 +18,14 @@
  </nav>
  
  <div class="flex items-center gap-3">
- <div class="hidden md:flex items-center gap-1 text-xs text-onSurface/60" aria-label="Language switcher">
+ <div class="hidden md:flex items-center gap-2 text-sm font-medium text-onSurface/60" aria-label="Language switcher">
  <a href="?lang=mk" class="hover:text-onSurface hover:underline">MK</a>
  <span class="text-onSurface/30">|</span>
  <a href="?lang=en" class="hover:text-onSurface hover:underline">EN</a>
  <span class="text-onSurface/30">|</span>
  <a href="?lang=tr" class="hover:text-onSurface hover:underline">TR</a>
+ <span class="text-onSurface/30">|</span>
+ <a href="?lang=sq" class="hover:text-onSurface hover:underline">SQ</a>
  </div>
  <a href="https://ednevnik.edu.mk" target="_blank" rel="noopener noreferrer" class="hidden md:flex items-center gap-1 text-primary text-sm hover:underline whitespace-nowrap">
  <i class="ti ti-login text-[16px]"></i>
@@ -44,12 +46,14 @@
  <a href="/staff" class="text-onSurface/70 hover:text-onSurface transition-colors py-2"><?php echo \htmlentities(tr('nav.staff'), ENT_QUOTES, 'UTF-8', false); ?></a>
  <a href="/news" class="text-onSurface/70 hover:text-onSurface transition-colors py-2"><?php echo \htmlentities(tr('nav.news'), ENT_QUOTES, 'UTF-8', false); ?></a>
  <a href="/contact" class="text-onSurface/70 hover:text-onSurface transition-colors py-2"><?php echo \htmlentities(tr('nav.contact'), ENT_QUOTES, 'UTF-8', false); ?></a>
- <div class="flex gap-2 text-xs text-onSurface/60 py-2 border-t border-surfaceContainer mt-2">
+ <div class="flex gap-3 text-sm font-medium text-onSurface/60 py-2 border-t border-surfaceContainer mt-2">
  <a href="?lang=mk" class="hover:underline">MK</a>
  <span>|</span>
  <a href="?lang=en" class="hover:underline">EN</a>
  <span>|</span>
  <a href="?lang=tr" class="hover:underline">TR</a>
+ <span>|</span>
+ <a href="?lang=sq" class="hover:underline">SQ</a>
  </div>
  <a href="https://ednevnik.edu.mk" target="_blank" rel="noopener noreferrer" class="text-primary py-2">Е-Дневник</a>
  </nav>
