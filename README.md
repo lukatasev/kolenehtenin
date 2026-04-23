@@ -12,7 +12,5 @@ Technical/SEO:
 - No structured data (School schema for Google)
 
 ### Todos
-- More news posts
+- More news posts (has to be done by human)
 - documents / links / downloads page
-- calendar or enrollment guide and points calculator
-- multiple languages (mk, english, turkish, albanian)

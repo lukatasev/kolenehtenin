@@ -10,6 +10,7 @@ $route->get("/news", "news");
 $route->get("/contact", "contact");
 $route->get("/staff", "staff");
 $route->get("/gallery", "gallery");
+$route->get("/links", "links");
 
 $page = $route->render_url($_SERVER["REQUEST_URI"], $GLOBALS);
 ?>

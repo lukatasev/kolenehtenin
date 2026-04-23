@@ -16,7 +16,7 @@
         <div class="space-y-4">
             <h2 class="text-xl font-semibold text-onSurface border-b border-surfaceContainer pb-3">{{ tr('staff.director') }}</h2>
             <div class="border border-surfaceContainer p-5 flex flex-col sm:flex-row gap-5 items-start">
-                <img src="/assets/images/vraboteni/jovanka_saleva.jpg" alt="Јованка Шалева" class="w-24 h-24 object-cover object-top rounded-sm shrink-0">
+                <img src="/assets/images/vraboteni/jovanka_saleva.jpg" alt="Јованка Шалева" class="w-24 h-24 object-cover object-top rounded-sm shrink-0 cursor-pointer" data-lightbox>
                 <div class="flex flex-col gap-1">
                     <span class="text-base font-medium">Јованка Шалева</span>
                     <p class="text-sm text-onSurface/60 leading-relaxed">{{ tr('staff.director_bio') }}</p>

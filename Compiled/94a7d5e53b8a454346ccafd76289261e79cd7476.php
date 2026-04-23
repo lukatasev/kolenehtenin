@@ -14,6 +14,7 @@
  <a href="/gallery" class="text-onSurface/70 hover:text-onSurface transition-colors whitespace-nowrap"><?php echo \htmlentities(tr('nav.gallery'), ENT_QUOTES, 'UTF-8', false); ?></a>
  <a href="/staff" class="text-onSurface/70 hover:text-onSurface transition-colors whitespace-nowrap"><?php echo \htmlentities(tr('nav.staff'), ENT_QUOTES, 'UTF-8', false); ?></a>
  <a href="/news" class="text-onSurface/70 hover:text-onSurface transition-colors whitespace-nowrap"><?php echo \htmlentities(tr('nav.news'), ENT_QUOTES, 'UTF-8', false); ?></a>
+ <a href="/links" class="text-onSurface/70 hover:text-onSurface transition-colors whitespace-nowrap"><?php echo \htmlentities(tr('nav.links'), ENT_QUOTES, 'UTF-8', false); ?></a>
  <a href="/contact" class="text-onSurface/70 hover:text-onSurface transition-colors whitespace-nowrap"><?php echo \htmlentities(tr('nav.contact'), ENT_QUOTES, 'UTF-8', false); ?></a>
  </nav>
  
@@ -29,7 +30,7 @@
  </div>
  <a href="https://ednevnik.edu.mk" target="_blank" rel="noopener noreferrer" class="hidden md:flex items-center gap-1 text-primary text-sm hover:underline whitespace-nowrap">
  <i class="ti ti-login text-[16px]"></i>
- <span class="hidden lg:inline">Е-Дневник</span>
+ <span class="hidden lg:inline"><?php echo \htmlentities(tr('nav.e_dnevnik'), ENT_QUOTES, 'UTF-8', false); ?></span>
  </a>
  <button id="mobile-menu-btn" class="lg:hidden text-onSurface p-1">
  <i class="ti ti-menu-2"></i>
@@ -45,6 +46,7 @@
  <a href="/gallery" class="text-onSurface/70 hover:text-onSurface transition-colors py-2"><?php echo \htmlentities(tr('nav.gallery'), ENT_QUOTES, 'UTF-8', false); ?></a>
  <a href="/staff" class="text-onSurface/70 hover:text-onSurface transition-colors py-2"><?php echo \htmlentities(tr('nav.staff'), ENT_QUOTES, 'UTF-8', false); ?></a>
  <a href="/news" class="text-onSurface/70 hover:text-onSurface transition-colors py-2"><?php echo \htmlentities(tr('nav.news'), ENT_QUOTES, 'UTF-8', false); ?></a>
+ <a href="/links" class="text-onSurface/70 hover:text-onSurface transition-colors py-2"><?php echo \htmlentities(tr('nav.links'), ENT_QUOTES, 'UTF-8', false); ?></a>
  <a href="/contact" class="text-onSurface/70 hover:text-onSurface transition-colors py-2"><?php echo \htmlentities(tr('nav.contact'), ENT_QUOTES, 'UTF-8', false); ?></a>
  <div class="flex gap-3 text-sm font-medium text-onSurface/60 py-2 border-t border-surfaceContainer mt-2">
  <a href="?lang=mk" class="hover:underline">MK</a>
@@ -55,7 +57,7 @@
  <span>|</span>
  <a href="?lang=sq" class="hover:underline">SQ</a>
  </div>
- <a href="https://ednevnik.edu.mk" target="_blank" rel="noopener noreferrer" class="text-primary py-2">Е-Дневник</a>
+ <a href="https://ednevnik.edu.mk" target="_blank" rel="noopener noreferrer" class="text-primary py-2"><?php echo \htmlentities(tr('nav.e_dnevnik'), ENT_QUOTES, 'UTF-8', false); ?></a>
  </nav>
  </div>
 </header>
