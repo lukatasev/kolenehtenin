@@ -1,5 +1,4 @@
 <?php defined("INDLUCE_CHECK") || die("404"); ?><?php echo $this->runChild('partials.header'); ?>
-
 <main class="w-full flex-grow">
  <!-- Hero -->
  <section class="border-b border-surfaceContainer">
@@ -7,7 +6,8 @@
  <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
  <div class="space-y-6">
  <h2 class="text-3xl md:text-4xl font-semibold text-onSurface leading-tight">
- ДСУ РЦСОО „Коле Нехтенин" - Штип
+ <?php echo \htmlentities(tr('school.name'), ENT_QUOTES, 'UTF-8', false); ?> - <?php echo \htmlentities(tr('school.city'), ENT_QUOTES, 'UTF-8', false); ?>
+
  </h2>
  <p class="text-base text-onSurface/70 leading-relaxed max-w-md">
  Регионален центар за стручно образование и обука. Создаваме кадри кои го движат општеството напред преку практична настава и дуално образование.
@@ -180,8 +180,8 @@
  <section class="border-t border-surfaceContainer py-16 px-6 max-w-5xl mx-auto">
  <div class="flex items-end justify-between mb-8">
  <div>
- <h2 class="text-xl font-semibold text-onSurface">Галерија</h2>
- <p class="text-sm text-onSurface/50 mt-1">Слики од училиштето.</p>
+ <h2 class="text-xl font-semibold text-onSurface"><?php echo \htmlentities(tr('gallery.title'), ENT_QUOTES, 'UTF-8', false); ?></h2>
+ <p class="text-sm text-onSurface/50 mt-1"><?php echo \htmlentities(tr('gallery.subtitle'), ENT_QUOTES, 'UTF-8', false); ?></p>
  </div>
  <a href="/gallery" class="hidden md:flex items-center gap-1 text-sm text-primary hover:underline">
  Сите слики &rarr;
@@ -193,6 +193,9 @@
  <img src="/assets/images/classroom1.jpg" alt="Училница" class="w-full h-60 object-cover rounded-sm cursor-pointer" data-lightbox>
  <img src="/assets/images/day_of_school1.jpg" alt="Денот во училиште" class="w-full h-60 object-cover rounded-sm cursor-pointer" data-lightbox>
  </div>
+ <a href="/gallery" class="md:hidden mt-6 flex items-center justify-center gap-1 text-sm text-primary">
+ Сите слики &rarr;
+ </a>
  </section>
 
 </main>

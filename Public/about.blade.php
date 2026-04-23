@@ -4,7 +4,7 @@
     <!-- Header -->
     <section class="border-b border-surfaceContainer bg-surfaceContainer/30">
         <div class="max-w-5xl mx-auto px-6 py-14">
-            <h1 class="text-3xl font-semibold text-onSurface">За нас</h1>
+            <h1 class="text-3xl font-semibold text-onSurface">{{ tr('about.title') }}</h1>
             <p class="text-base text-onSurface/60 mt-2">Историја, мисија и традиција на нашето училиште.</p>
         </div>
     </section>
@@ -21,8 +21,8 @@
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
-            <div class="space-y-4">
-                <h2 class="text-xl font-semibold text-onSurface">Мисија</h2>
+        <div class="space-y-4">
+            <h2 class="text-xl font-semibold text-onSurface">{{ tr('about.mission_title') }}</h2>
                 <div class="text-onSurface/70 leading-relaxed space-y-4">
                     <p>
                         Создавање и развивање на безбедна и здрава средина во која учениците од различни етнички заедници со задоволство ќе доаѓаат и стекнуваат нови знаења и вештини во насока на афирмацијата.
@@ -34,7 +34,7 @@
             </div>
             
             <div class="space-y-4">
-                <h2 class="text-xl font-semibold text-onSurface">Визија</h2>
+                <h2 class="text-xl font-semibold text-onSurface">{{ tr('about.vision_title') }}</h2>
                 <div class="text-onSurface/70 leading-relaxed space-y-4">
                     <p>
                         Да бидеме училиште кое ги препознава и почитува различностите, каде секој ученик може да го реализира својот потенцијал преку квалитетно стручно образование.
@@ -53,7 +53,7 @@
         </div>
 
         <div class="space-y-4">
-            <h2 class="text-xl font-semibold text-onSurface">Историја</h2>
+            <h2 class="text-xl font-semibold text-onSurface">{{ tr('about.history_title') }}</h2>
             <div class="text-onSurface/70 leading-relaxed space-y-4">
                 <p>
                     Почетоците на ДСУ РЦСОО „Коле Нехтенин" датираат уште пред Втората светска војна, кога претставувало занаетчиско училиште во Штип. Со текот на годините, тоа се развивало и прилагодувало на индустриските потреби на времето. 
@@ -68,7 +68,7 @@
         </div>
 
         <div class="space-y-4">
-            <h2 class="text-xl font-semibold text-onSurface">Инфраструктура</h2>
+            <h2 class="text-xl font-semibold text-onSurface">{{ tr('about.infrastructure_title') }}</h2>
             <div class="text-onSurface/70 leading-relaxed space-y-4">
                 <p>
                     Училиштето денес брои околу 800 ученици, распоредени во 28 паралелки. Наставата се одвива преку стручни програми од 3 и 4 години, нудејќи широк спектар на специјализации.

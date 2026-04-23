@@ -1,5 +1,6 @@
 <?php
 require_once "Art/Load.php";
+require_once "api/lang.php";
 
 $route->get("index", "home");
 $route->get("/home", "home");

@@ -6,6 +6,13 @@ $months = [
     "10" => "Октомври", "11" => "Ноември", "12" => "Декември"
 ];
 
+$months_en = [
+    "01" => "January", "02" => "February", "03" => "March",
+    "04" => "April", "05" => "May", "06" => "June",
+    "07" => "July", "08" => "August", "09" => "September",
+    "10" => "October", "11" => "November", "12" => "December"
+];
+
 function formatDate($date, $months) {
     $parts = explode("-", $date);
     $day = ltrim($parts[2], "0");
@@ -38,6 +45,15 @@ $page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
 $limit = 12;
 $offset = ($page - 1) * $limit;
 
+$lang = 'mk';
+if (isset($_GET['lang'])) {
+    $lang = strtolower(substr($_GET['lang'], 0, 2));
+} elseif (isset($_COOKIE['lang'])) {
+    $lang = strtolower(substr($_COOKIE['lang'], 0, 2));
+}
+if (!in_array($lang, ['mk','en','tr'])) $lang = 'mk';
+$monthData = $lang === 'en' ? $months_en : $months;
+
 $stmt = $pdo->prepare("
     SELECT id, slug, title, excerpt, content, date, category, source_url,
            image_main, image_2, image_3, image_4, image_5
@@ -61,8 +77,8 @@ $current_page = $page;
     <!-- Header -->
     <section class="border-b border-surfaceContainer bg-surfaceContainer/30">
         <div class="max-w-5xl mx-auto px-6 py-14">
-            <h1 class="text-3xl font-semibold text-onSurface">Новости</h1>
-            <p class="text-base text-onSurface/60 mt-2">Активности и постигнувања на учениците.</p>
+            <h1 class="text-3xl font-semibold text-onSurface">{{ tr('news.title') }}</h1>
+            <p class="text-base text-onSurface/60 mt-2">{{ tr('news.subtitle') }}</p>
             <div class="flex gap-4 mt-4">
                 <a href="https://www.facebook.com/skolenehtenin" target="_blank" rel="noopener noreferrer" class="text-sm text-onSurface/60 hover:text-onSurface flex items-center gap-1">
                     <i class="ti ti-brand-facebook text-[18px]"></i>
@@ -79,7 +95,7 @@ $current_page = $page;
     <!-- Content -->
     <section class="py-16 px-6 max-w-5xl mx-auto">
         <?php if (empty($news)): ?>
-            <p class="text-onSurface/50 text-center py-12">Нема објавени новости.</p>
+            <p class="text-onSurface/50 text-center py-12">{{ tr('news.no_news') }}</p>
         <?php else: ?>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <?php foreach ($news as $article): ?>
@@ -92,7 +108,7 @@ $current_page = $page;
                             </div>
                         <?php endif; ?>
                         <div class="p-5">
-                            <span class="text-xs text-onSurface/40 mb-2 block"><?php echo formatDate($article["date"], $months); ?></span>
+                            <span class="text-xs text-onSurface/40 mb-2 block"><?php echo formatDate($article["date"], $monthData); ?></span>
                             <h3 class="text-base font-semibold text-onSurface mb-2 leading-tight"><?php echo htmlspecialchars($article["title"]); ?></h3>
                             <p class="text-sm text-onSurface/60 leading-relaxed line-clamp-[6]">
                                 <?php echo formatExcerpt(truncateExcerpt($article["excerpt"], 300)); ?>
@@ -110,7 +126,7 @@ $current_page = $page;
                 <div class="flex justify-center items-center gap-2 mt-12">
                     <?php if ($current_page > 1): ?>
                         <a href="/news?page=<?php echo $current_page - 1; ?>" class="px-4 py-2 text-sm border border-surfaceContainer rounded-sm hover:bg-surfaceContainer transition-colors text-onSurface/70 hover:text-onSurface">
-                            &larr; Претходна
+                            &larr; {{ tr('news.previous') }}
                         </a>
                     <?php endif; ?>
 
@@ -126,7 +142,7 @@ $current_page = $page;
 
                     <?php if ($current_page < $total_pages): ?>
                         <a href="/news?page=<?php echo $current_page + 1; ?>" class="px-4 py-2 text-sm border border-surfaceContainer rounded-sm hover:bg-surfaceContainer transition-colors text-onSurface/70 hover:text-onSurface">
-                            Следна &rarr;
+                            {{ tr('news.next') }} &rarr;
                         </a>
                     <?php endif; ?>
                 </div>

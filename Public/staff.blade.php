@@ -4,8 +4,8 @@
     <!-- Header -->
     <section class="border-b border-surfaceContainer bg-surfaceContainer/30">
         <div class="max-w-5xl mx-auto px-6 py-14">
-            <h1 class="text-3xl font-semibold text-onSurface">Вработени</h1>
-            <p class="text-base text-onSurface/60 mt-2">Наставен кадар и стручна служба.</p>
+            <h1 class="text-3xl font-semibold text-onSurface">{{ tr('staff.title') }}</h1>
+            <p class="text-base text-onSurface/60 mt-2">{{ tr('staff.subtitle') }}</p>
         </div>
     </section>
 
@@ -14,7 +14,7 @@
 
         <!-- Director -->
         <div class="space-y-4">
-            <h2 class="text-xl font-semibold text-onSurface border-b border-surfaceContainer pb-3">Директор</h2>
+            <h2 class="text-xl font-semibold text-onSurface border-b border-surfaceContainer pb-3">{{ tr('staff.director') }}</h2>
             <div class="border border-surfaceContainer p-5 flex flex-col sm:flex-row gap-5 items-start">
                 <img src="/assets/images/vraboteni/jovanka_saleva.jpg" alt="Јованка Шалева" class="w-24 h-24 object-cover object-top rounded-sm shrink-0">
                 <div class="flex flex-col gap-1">
@@ -28,7 +28,7 @@
 
         <!-- Pedagogues -->
         <div class="space-y-4">
-            <h2 class="text-xl font-semibold text-onSurface border-b border-surfaceContainer pb-3">Педагози</h2>
+            <h2 class="text-xl font-semibold text-onSurface border-b border-surfaceContainer pb-3">{{ tr('staff.pedagogues') }}</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
                 <div class="border border-surfaceContainer p-5 flex flex-col items-center text-center gap-2">
                     <img src="/assets/images/vraboteni/placeholder.svg" alt="Весна Ивкова" class="w-20 h-20 object-cover object-top rounded-sm cursor-pointer" data-lightbox>
@@ -59,7 +59,7 @@
 
         <!-- Electro -->
         <div class="space-y-4">
-            <h2 class="text-xl font-semibold text-onSurface border-b border-surfaceContainer pb-3">Електро актив</h2>
+            <h2 class="text-xl font-semibold text-onSurface border-b border-surfaceContainer pb-3">{{ tr('staff.electro_active') }}</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
                 <div class="border border-surfaceContainer p-5 flex flex-col items-center text-center gap-2">
                     <img src="/assets/images/vraboteni/lupce_janevski.jpg" alt="Јаневски Љупче" class="w-20 h-20 object-cover object-top rounded-sm cursor-pointer" data-lightbox>
@@ -191,7 +191,7 @@
 
         <!-- Machine -->
         <div class="space-y-4">
-            <h2 class="text-xl font-semibold text-onSurface border-b border-surfaceContainer pb-3">Машински актив</h2>
+            <h2 class="text-xl font-semibold text-onSurface border-b border-surfaceContainer pb-3">{{ tr('staff.machine_active') }}</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
                 <div class="border border-surfaceContainer p-5 flex flex-col items-center text-center gap-2">
                     <img src="/assets/images/vraboteni/daniel_gorgievski.jpg" alt="Ѓорѓиевски Даниел" class="w-20 h-20 object-cover object-top rounded-sm cursor-pointer" data-lightbox>
@@ -297,7 +297,7 @@
 
         <!-- Hospitality -->
         <div class="space-y-4">
-            <h2 class="text-xl font-semibold text-onSurface border-b border-surfaceContainer pb-3">Угостителско-туристички актив</h2>
+            <h2 class="text-xl font-semibold text-onSurface border-b border-surfaceContainer pb-3">{{ tr('staff.hospitality_active') }}</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
                 <div class="border border-surfaceContainer p-5 flex flex-col items-center text-center gap-2">
                     <img src="/assets/images/vraboteni/goran_antonievski.jpg" alt="Антониевски Горан" class="w-20 h-20 object-cover object-top rounded-sm cursor-pointer" data-lightbox>
@@ -325,7 +325,7 @@
 
         <!-- Math/Science -->
         <div class="space-y-4">
-            <h2 class="text-xl font-semibold text-onSurface border-b border-surfaceContainer pb-3">Природно-математички актив</h2>
+            <h2 class="text-xl font-semibold text-onSurface border-b border-surfaceContainer pb-3">{{ tr('staff.math_science_active') }}</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
                 <div class="border border-surfaceContainer p-5 flex flex-col items-center text-center gap-2">
                     <img src="/assets/images/vraboteni/zoran_gorgiev.jpg" alt="Ѓоргиев Зоран" class="w-20 h-20 object-cover object-top rounded-sm cursor-pointer" data-lightbox>
@@ -377,7 +377,7 @@
 
         <!-- General -->
         <div class="space-y-4">
-            <h2 class="text-xl font-semibold text-onSurface border-b border-surfaceContainer pb-3">Општообразовен актив</h2>
+            <h2 class="text-xl font-semibold text-onSurface border-b border-surfaceContainer pb-3">{{ tr('staff.general_active') }}</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
                 <div class="border border-surfaceContainer p-5 flex flex-col items-center text-center gap-2">
                     <img src="/assets/images/vraboteni/ana_joveva_donev.jpg" alt="Јовева Ана" class="w-20 h-20 object-cover object-top rounded-sm cursor-pointer" data-lightbox>
@@ -457,9 +457,9 @@
                     </div>
                 </div>
                 <div class="border border-surfaceContainer p-5 flex flex-col items-center text-center gap-2">
-                    <img src="/assets/images/vraboteni/placeholder.svg" alt="Самарџиски Методи" class="w-20 h-20 object-cover object-top rounded-sm cursor-pointer" data-lightbox>
+                    <img src="/assets/images/vraboteni/placeholder.svg" alt="Самарджиски Методи" class="w-20 h-20 object-cover object-top rounded-sm cursor-pointer" data-lightbox>
                     <div class="flex flex-col gap-0.5">
-                        <span class="text-sm font-medium">Самарџиски Методи</span>
+                        <span class="text-sm font-medium">Самарджиски Методи</span>
                         <a href="mailto:metodis66@gmail.com" class="text-xs text-primary hover:underline">metodis66@gmail.com</a>
                     </div>
                 </div>

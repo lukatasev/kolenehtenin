@@ -1,42 +1,56 @@
 <header class="w-full bg-surface border-b border-surfaceContainer">
-    <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
-        <a href="/home" class="flex items-center gap-3">
-            <img src="/assets/images/logo.jpg" alt="Коле Нехтенин Лого" class="h-9 w-auto rounded-sm object-contain">
-            <div class="flex flex-col">
-                <h1 class="text-base font-semibold text-onSurface leading-tight">ДСУ РЦСОО „Коле Нехтенин"</h1>
-                <span class="text-[11px] text-onSurface/50 tracking-wide">Штип</span>
+    <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center gap-4">
+        <a href="/home" class="flex items-center gap-3 shrink-0">
+            <img src="/assets/images/logo.jpg" alt="{{ tr('school.name') }} Лого" class="h-9 w-auto rounded-sm object-contain">
+            <div class="hidden sm:flex flex-col">
+                <span class="text-base font-semibold text-onSurface leading-tight">{{ tr('school.name') }}</span>
+                <span class="text-[11px] text-onSurface/50 tracking-wide">{{ tr('school.city') }}</span>
             </div>
         </a>
         
-        <nav class="hidden md:flex items-center gap-6 text-sm">
-            <a href="/about" class="text-onSurface/70 hover:text-onSurface transition-colors">За нас</a>
-            <a href="/programs" class="text-onSurface/70 hover:text-onSurface transition-colors">Струки</a>
-            <a href="/gallery" class="text-onSurface/70 hover:text-onSurface transition-colors">Галерија</a>
-            <a href="/staff" class="text-onSurface/70 hover:text-onSurface transition-colors">Вработени</a>
-            <a href="/news" class="text-onSurface/70 hover:text-onSurface transition-colors">Новости</a>
-            <a href="/contact" class="text-onSurface/70 hover:text-onSurface transition-colors">Контакт</a>
+        <nav class="hidden lg:flex items-center gap-5 text-sm">
+            <a href="/about" class="text-onSurface/70 hover:text-onSurface transition-colors whitespace-nowrap">{{ tr('nav.about') }}</a>
+            <a href="/programs" class="text-onSurface/70 hover:text-onSurface transition-colors whitespace-nowrap">{{ tr('nav.programs') }}</a>
+            <a href="/gallery" class="text-onSurface/70 hover:text-onSurface transition-colors whitespace-nowrap">{{ tr('nav.gallery') }}</a>
+            <a href="/staff" class="text-onSurface/70 hover:text-onSurface transition-colors whitespace-nowrap">{{ tr('nav.staff') }}</a>
+            <a href="/news" class="text-onSurface/70 hover:text-onSurface transition-colors whitespace-nowrap">{{ tr('nav.news') }}</a>
+            <a href="/contact" class="text-onSurface/70 hover:text-onSurface transition-colors whitespace-nowrap">{{ tr('nav.contact') }}</a>
         </nav>
         
-        <div class="flex items-center gap-4">
-            <a href="https://ednevnik.edu.mk" target="_blank" rel="noopener noreferrer" class="hidden md:flex items-center gap-1 text-primary text-sm hover:underline">
-                <i class="ti ti-login text-[18px]"></i>
-                Е-Дневник
+        <div class="flex items-center gap-3">
+            <div class="hidden md:flex items-center gap-1 text-xs text-onSurface/60" aria-label="Language switcher">
+                <a href="?lang=mk" class="hover:text-onSurface hover:underline">MK</a>
+                <span class="text-onSurface/30">|</span>
+                <a href="?lang=en" class="hover:text-onSurface hover:underline">EN</a>
+                <span class="text-onSurface/30">|</span>
+                <a href="?lang=tr" class="hover:text-onSurface hover:underline">TR</a>
+            </div>
+            <a href="https://ednevnik.edu.mk" target="_blank" rel="noopener noreferrer" class="hidden md:flex items-center gap-1 text-primary text-sm hover:underline whitespace-nowrap">
+                <i class="ti ti-login text-[16px]"></i>
+                <span class="hidden lg:inline">Е-Дневник</span>
             </a>
-            <button id="mobile-menu-btn" class="md:hidden text-onSurface">
+            <button id="mobile-menu-btn" class="lg:hidden text-onSurface p-1">
                 <i class="ti ti-menu-2"></i>
             </button>
         </div>
     </div>
 
     <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden md:hidden border-t border-surfaceContainer">
-        <nav class="flex flex-col px-6 py-4 gap-4 text-sm">
-            <a href="/about" class="text-onSurface/70 hover:text-onSurface transition-colors py-2">За нас</a>
-            <a href="/programs" class="text-onSurface/70 hover:text-onSurface transition-colors py-2">Струки</a>
-            <a href="/gallery" class="text-onSurface/70 hover:text-onSurface transition-colors py-2">Галерија</a>
-            <a href="/staff" class="text-onSurface/70 hover:text-onSurface transition-colors py-2">Вработени</a>
-            <a href="/news" class="text-onSurface/70 hover:text-onSurface transition-colors py-2">Новости</a>
-            <a href="/contact" class="text-onSurface/70 hover:text-onSurface transition-colors py-2">Контакт</a>
+    <div id="mobile-menu" class="hidden lg:hidden border-t border-surfaceContainer">
+        <nav class="flex flex-col px-4 py-3 gap-2 text-sm">
+            <a href="/about" class="text-onSurface/70 hover:text-onSurface transition-colors py-2">{{ tr('nav.about') }}</a>
+            <a href="/programs" class="text-onSurface/70 hover:text-onSurface transition-colors py-2">{{ tr('nav.programs') }}</a>
+            <a href="/gallery" class="text-onSurface/70 hover:text-onSurface transition-colors py-2">{{ tr('nav.gallery') }}</a>
+            <a href="/staff" class="text-onSurface/70 hover:text-onSurface transition-colors py-2">{{ tr('nav.staff') }}</a>
+            <a href="/news" class="text-onSurface/70 hover:text-onSurface transition-colors py-2">{{ tr('nav.news') }}</a>
+            <a href="/contact" class="text-onSurface/70 hover:text-onSurface transition-colors py-2">{{ tr('nav.contact') }}</a>
+            <div class="flex gap-2 text-xs text-onSurface/60 py-2 border-t border-surfaceContainer mt-2">
+                <a href="?lang=mk" class="hover:underline">MK</a>
+                <span>|</span>
+                <a href="?lang=en" class="hover:underline">EN</a>
+                <span>|</span>
+                <a href="?lang=tr" class="hover:underline">TR</a>
+            </div>
             <a href="https://ednevnik.edu.mk" target="_blank" rel="noopener noreferrer" class="text-primary py-2">Е-Дневник</a>
         </nav>
     </div>
@@ -53,7 +67,6 @@ document.getElementById('mobile-menu-btn').addEventListener('click', function() 
     document.getElementById('mobile-menu').classList.toggle('hidden');
 });
 
-// Lightbox functionality
 document.addEventListener('click', function(e) {
     if (e.target.tagName === 'IMG' && e.target.closest('[data-lightbox]')) {
         const lightbox = document.getElementById('lightbox');

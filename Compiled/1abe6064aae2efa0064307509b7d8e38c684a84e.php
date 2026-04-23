@@ -4,7 +4,7 @@
  <!-- Header -->
  <section class="border-b border-surfaceContainer bg-surfaceContainer/30">
  <div class="max-w-5xl mx-auto px-6 py-14">
- <h1 class="text-3xl font-semibold text-onSurface">Струки</h1>
+ <h1 class="text-3xl font-semibold text-onSurface"><?php echo \htmlentities(tr('programs.title'), ENT_QUOTES, 'UTF-8', false); ?></h1>
  </div>
  </section>
 
@@ -14,8 +14,8 @@
  <div class="flex items-start gap-3">
  <i class="ti ti-info-circle text-primary text-[24px] mt-0.5"></i>
  <div>
- <p class="text-sm font-medium text-onSurface">Запишуваме 254 ученици во 8 паралелки за учебната 2026/2027 година.</p>
- <a href="https://mon.gov.mk/mk-MK/odnosi-so-javnost/soopstenija/objaven-e-konkursot-za-upis-vo-sredni-ucilista-vo-ucebnata-2026-2027-godina" target="_blank" rel="noopener noreferrer" class="text-sm text-primary hover:underline mt-1 inline-block">Погледни го официјалниот конкурс &rarr;</a>
+ <p class="text-sm font-medium text-onSurface"><?php echo \htmlentities(tr('programs.konkurs_title'), ENT_QUOTES, 'UTF-8', false); ?></p>
+ <a href="https://mon.gov.mk/mk-MK/odnosi-so-javnost/soopstenija/objaven-e-konkursot-za-upis-vo-sredni-ucilista-vo-ucebnata-2026-2027-godina" target="_blank" rel="noopener noreferrer" class="text-sm text-primary hover:underline mt-1 inline-block"><?php echo \htmlentities(tr('programs.konkurs_link'), ENT_QUOTES, 'UTF-8', false); ?> &rarr;</a>
  </div>
  </div>
  </div>
@@ -26,13 +26,14 @@
  
  <!-- Електротехничка -->
  <div class="space-y-4">
- <h2 class="text-xl font-semibold text-onSurface border-b border-surfaceContainer pb-3">Електротехничка струка &mdash; 127 ученици, 4 паралелки</h2>
+ <h2 class="text-xl font-semibold text-onSurface border-b border-surfaceContainer pb-3"><?php echo \htmlentities(tr('programs.electro.title'), ENT_QUOTES, 'UTF-8', false); ?> &mdash; <?php echo \htmlentities(tr('programs.electro.subtitle'), ENT_QUOTES, 'UTF-8', false); ?></h2>
  
  <details class="border border-surfaceContainer group">
  <summary class="p-5 cursor-pointer flex items-center justify-between text-onSurface hover:bg-surfaceContainer/30 transition-colors">
  <span class="text-base font-medium flex items-center gap-2">
  <i class="ti ti-player-play text-onSurface/60"></i>
- Погледнете го видеото
+ <?php echo \htmlentities(tr('programs.watch_video'), ENT_QUOTES, 'UTF-8', false); ?>
+
  </span>
  <span class="text-onSurface/40 group-open:rotate-180 transition-transform text-sm">&darr;</span>
  </summary>
@@ -50,14 +51,14 @@
  <div class="flex flex-col gap-3 flex-grow">
  <span class="text-base font-medium">Електротехничар за компјутерска техника и автоматика</span>
  <div class="flex flex-wrap gap-2">
- <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm">4 години</span>
- <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-sm">Мин. 60 поени</span>
+ <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm"><?php echo \htmlentities(tr('programs.years', ['n' => '4']), ENT_QUOTES, 'UTF-8', false); ?></span>
+ <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-sm"><?php echo \htmlentities(tr('programs.min_points', ['points' => '60']), ENT_QUOTES, 'UTF-8', false); ?></span>
  </div>
  </div>
  <span class="text-onSurface/40 group-open:rotate-180 transition-transform text-sm">&darr;</span>
  </summary>
  <div class="px-5 pb-5 pt-2 border-t border-surfaceContainer text-sm text-onSurface/70">
- <p class="mb-2 font-medium text-onSurface">Оспособен:</p>
+ <p class="mb-2 font-medium text-onSurface"><?php echo \htmlentities(tr('programs.trained_for'), ENT_QUOTES, 'UTF-8', false); ?></p>
  <ul class="list-disc pl-5 space-y-1 leading-relaxed">
  <li>да ги применува законите на електротехниката во управувањето со компјутерски системи;</li>
  <li>да ги подготвува компјутерите за корисниците;</li>
@@ -72,8 +73,8 @@
  <li>да ги планира и организира работните задачи;</li>
  </ul>
  <div class="mt-4 flex flex-wrap gap-2">
- <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm">68 ученици</span>
- <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm">2 паралелки</span>
+ <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm">68 <?php echo \htmlentities(tr('programs.students'), ENT_QUOTES, 'UTF-8', false); ?></span>
+ <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm">2 <?php echo \htmlentities(tr('programs.classes'), ENT_QUOTES, 'UTF-8', false); ?></span>
  </div>
  </div>
  </details>
@@ -83,15 +84,15 @@
  <div class="flex flex-col gap-3 flex-grow">
  <span class="text-base font-medium">Електротехничар &ndash; енергетичар</span>
  <div class="flex flex-wrap gap-2">
- <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm">4 години</span>
- <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-sm">Мин. 45 поени</span>
- <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-sm">Дуална паралелка</span>
+ <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm"><?php echo \htmlentities(tr('programs.years', ['n' => '4']), ENT_QUOTES, 'UTF-8', false); ?></span>
+ <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-sm"><?php echo \htmlentities(tr('programs.min_points', ['points' => '45']), ENT_QUOTES, 'UTF-8', false); ?></span>
+ <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-sm"><?php echo \htmlentities(tr('programs.dual_class'), ENT_QUOTES, 'UTF-8', false); ?></span>
  </div>
  </div>
  <span class="text-onSurface/40 group-open:rotate-180 transition-transform text-sm">&darr;</span>
  </summary>
  <div class="px-5 pb-5 pt-2 border-t border-surfaceContainer text-sm text-onSurface/70">
- <p class="mb-2 font-medium text-onSurface">Оспособен:</p>
+ <p class="mb-2 font-medium text-onSurface"><?php echo \htmlentities(tr('programs.trained_for'), ENT_QUOTES, 'UTF-8', false); ?></p>
  <ul class="list-disc pl-5 space-y-1 leading-relaxed">
  <li>да ги применува електротехничките законитости;</li>
  <li>да го познава принципот на работа и карактеристиките на електричните машини, апарати и инсталации;</li>
@@ -106,7 +107,7 @@
  <li>да организира и применува хигиено &ndash; техничка заштита;</li>
  <li>да води мал бизнис;</li>
  </ul>
- <p class="mt-3 font-medium text-onSurface">Партнерски компании:</p>
+ <p class="mt-3 font-medium text-onSurface"><?php echo \htmlentities(tr('programs.partner_companies'), ENT_QUOTES, 'UTF-8', false); ?></p>
  <div class="mt-2 flex gap-4 items-center">
  <img src="/assets/images/companies/tm_doo.png" alt="ТМ ДОО" class="h-8 w-auto object-contain">
  <img src="/assets/images/companies/jp_hidrosistem_zletovica.png" alt="ЈП Хидросистем Злетовица" class="h-8 w-auto object-contain">
@@ -116,8 +117,8 @@
  <img src="/assets/images/companies/zdvil_lion.png" alt="ЗДВИЛ ЛИОН" class="h-8 w-auto object-contain">
  </div>
  <div class="mt-4 flex flex-wrap gap-2">
- <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm">25 ученици</span>
- <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm">1 паралелка</span>
+ <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm">25 <?php echo \htmlentities(tr('programs.students'), ENT_QUOTES, 'UTF-8', false); ?></span>
+ <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm">1 <?php echo \htmlentities(tr('programs.classes'), ENT_QUOTES, 'UTF-8', false); ?></span>
  </div>
  </div>
  </details>
@@ -127,14 +128,14 @@
  <div class="flex flex-col gap-3 flex-grow">
  <span class="text-base font-medium">Електротехничар за електроника и телекомуникации</span>
  <div class="flex flex-wrap gap-2">
- <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm">4 години</span>
- <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-sm">Мин. 50 поени</span>
+ <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm"><?php echo \htmlentities(tr('programs.years', ['n' => '4']), ENT_QUOTES, 'UTF-8', false); ?></span>
+ <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-sm"><?php echo \htmlentities(tr('programs.min_points', ['points' => '50']), ENT_QUOTES, 'UTF-8', false); ?></span>
  </div>
  </div>
  <span class="text-onSurface/40 group-open:rotate-180 transition-transform text-sm">&darr;</span>
  </summary>
  <div class="px-5 pb-5 pt-2 border-t border-surfaceContainer text-sm text-onSurface/70">
- <p class="mb-2 font-medium text-onSurface">Оспособен:</p>
+ <p class="mb-2 font-medium text-onSurface"><?php echo \htmlentities(tr('programs.trained_for'), ENT_QUOTES, 'UTF-8', false); ?></p>
  <ul class="list-disc pl-5 space-y-1 leading-relaxed">
  <li>да ги применува законите на електротехниката;</li>
  <li>да го користи компјутерот за електрични шеми;</li>
@@ -146,8 +147,8 @@
  <li>да користи наменски програмски пакети;</li>
  </ul>
  <div class="mt-4 flex flex-wrap gap-2">
- <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm">34 ученици</span>
- <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm">1 паралелка</span>
+ <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm">34 <?php echo \htmlentities(tr('programs.students'), ENT_QUOTES, 'UTF-8', false); ?></span>
+ <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm">1 <?php echo \htmlentities(tr('programs.classes'), ENT_QUOTES, 'UTF-8', false); ?></span>
  </div>
  </div>
  </details>
@@ -155,13 +156,14 @@
 
  <!-- Машинска -->
  <div class="space-y-4">
- <h2 class="text-xl font-semibold text-onSurface border-b border-surfaceContainer pb-3">Машинска струка &mdash; 93 ученици, 3 паралелки</h2>
+ <h2 class="text-xl font-semibold text-onSurface border-b border-surfaceContainer pb-3"><?php echo \htmlentities(tr('programs.machine.title'), ENT_QUOTES, 'UTF-8', false); ?> &mdash; <?php echo \htmlentities(tr('programs.machine.subtitle'), ENT_QUOTES, 'UTF-8', false); ?></h2>
  
  <details class="border border-surfaceContainer group">
  <summary class="p-5 cursor-pointer flex items-center justify-between text-onSurface hover:bg-surfaceContainer/30 transition-colors">
  <span class="text-base font-medium flex items-center gap-2">
  <i class="ti ti-player-play text-onSurface/60"></i>
- Погледнете го видеото
+ <?php echo \htmlentities(tr('programs.watch_video'), ENT_QUOTES, 'UTF-8', false); ?>
+
  </span>
  <span class="text-onSurface/40 group-open:rotate-180 transition-transform text-sm">&darr;</span>
  </summary>
@@ -179,15 +181,15 @@
  <div class="flex flex-col gap-3 flex-grow">
  <span class="text-base font-medium">Техничар за компјутерско управување / Машински техничар</span>
  <div class="flex flex-wrap gap-2">
- <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm">4 години</span>
- <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-sm">Мин. 45 поени</span>
- <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-sm">Дуална паралелка</span>
+ <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm"><?php echo \htmlentities(tr('programs.years', ['n' => '4']), ENT_QUOTES, 'UTF-8', false); ?></span>
+ <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-sm"><?php echo \htmlentities(tr('programs.min_points', ['points' => '45']), ENT_QUOTES, 'UTF-8', false); ?></span>
+ <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-sm"><?php echo \htmlentities(tr('programs.dual_class'), ENT_QUOTES, 'UTF-8', false); ?></span>
  </div>
  </div>
  <span class="text-onSurface/40 group-open:rotate-180 transition-transform text-sm">&darr;</span>
  </summary>
  <div class="px-5 pb-5 pt-2 border-t border-surfaceContainer text-sm text-onSurface/70">
- <p class="mb-2 font-medium text-onSurface">Оспособен:</p>
+ <p class="mb-2 font-medium text-onSurface"><?php echo \htmlentities(tr('programs.trained_for'), ENT_QUOTES, 'UTF-8', false); ?></p>
  <ul class="list-disc pl-5 space-y-1 leading-relaxed">
  <li>да моделира и конструира машински елементи и склопови со компјутер;</li>
  <li>да конфигурира електропневматски и хидраулични системи;</li>
@@ -200,14 +202,14 @@
  <li>да се грижи за хигиенско &ndash; техничката заштита;</li>
  <li>да се грижи за заштита на животната средина;</li>
  </ul>
- <p class="mt-3 font-medium text-onSurface">Партнерски компании:</p>
+ <p class="mt-3 font-medium text-onSurface"><?php echo \htmlentities(tr('programs.partner_companies'), ENT_QUOTES, 'UTF-8', false); ?></p>
  <div class="mt-2 flex gap-4 items-center">
  <img src="/assets/images/companies/tm_doo.png" alt="ТМ ДОО" class="h-8 w-auto object-contain">
  <img src="/assets/images/companies/aktiva_doo.jpg" alt="АКТИВА ДОО" class="h-8 w-auto object-contain">
  </div>
  <div class="mt-4 flex flex-wrap gap-2">
- <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm">25 ученици</span>
- <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm">1 паралелка</span>
+ <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm">25 <?php echo \htmlentities(tr('programs.students'), ENT_QUOTES, 'UTF-8', false); ?></span>
+ <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm">1 <?php echo \htmlentities(tr('programs.classes'), ENT_QUOTES, 'UTF-8', false); ?></span>
  </div>
  </div>
  </details>
@@ -217,14 +219,14 @@
  <div class="flex flex-col gap-3 flex-grow">
  <span class="text-base font-medium">Машински техничар за моторни возила / Машинско-енергетски техничар</span>
  <div class="flex flex-wrap gap-2">
- <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm">4 години</span>
- <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-sm">Мин. 45 поени</span>
+ <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm"><?php echo \htmlentities(tr('programs.years', ['n' => '4']), ENT_QUOTES, 'UTF-8', false); ?></span>
+ <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-sm"><?php echo \htmlentities(tr('programs.min_points', ['points' => '45']), ENT_QUOTES, 'UTF-8', false); ?></span>
  </div>
  </div>
  <span class="text-onSurface/40 group-open:rotate-180 transition-transform text-sm">&darr;</span>
  </summary>
  <div class="px-5 pb-5 pt-2 border-t border-surfaceContainer text-sm text-onSurface/70">
- <p class="mb-2 font-medium text-onSurface">Оспособен:</p>
+ <p class="mb-2 font-medium text-onSurface"><?php echo \htmlentities(tr('programs.trained_for'), ENT_QUOTES, 'UTF-8', false); ?></p>
  <ul class="list-disc pl-5 space-y-1 leading-relaxed">
  <li>да ги применува законитостите од механиката, хидрауликата и топлотехниката;</li>
  <li>да организира работни задачи од областа на механизацијата и автоматизацијата во производните и непроизводните процеси;</li>
@@ -236,8 +238,8 @@
  <li>да монтира машински елементи;</li>
  </ul>
  <div class="mt-4 flex flex-wrap gap-2">
- <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm">34 ученици</span>
- <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm">1 паралелка</span>
+ <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm">34 <?php echo \htmlentities(tr('programs.students'), ENT_QUOTES, 'UTF-8', false); ?></span>
+ <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm">1 <?php echo \htmlentities(tr('programs.classes'), ENT_QUOTES, 'UTF-8', false); ?></span>
  </div>
  </div>
  </details>
@@ -247,14 +249,14 @@
  <div class="flex flex-col gap-3 flex-grow">
  <span class="text-base font-medium">Машински механичар / Конструкциски механичар</span>
  <div class="flex flex-wrap gap-2">
- <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm">3 години</span>
- <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-sm">Мин. 30 поени</span>
+ <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm"><?php echo \htmlentities(tr('programs.years', ['n' => '3']), ENT_QUOTES, 'UTF-8', false); ?></span>
+ <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-sm"><?php echo \htmlentities(tr('programs.min_points', ['points' => '30']), ENT_QUOTES, 'UTF-8', false); ?></span>
  </div>
  </div>
  <span class="text-onSurface/40 group-open:rotate-180 transition-transform text-sm">&darr;</span>
  </summary>
  <div class="px-5 pb-5 pt-2 border-t border-surfaceContainer text-sm text-onSurface/70">
- <p class="mb-2 font-medium text-onSurface">Оспособен:</p>
+ <p class="mb-2 font-medium text-onSurface"><?php echo \htmlentities(tr('programs.trained_for'), ENT_QUOTES, 'UTF-8', false); ?></p>
  <ul class="list-disc pl-5 space-y-1 leading-relaxed">
  <li>одржување и поправка на машини и системи;</li>
  <li>монтирање и демонтирање делови и групи од елементи;</li>
@@ -263,8 +265,8 @@
  <li>изработување резервни делови и конструкциски елементи.</li>
  </ul>
  <div class="mt-4 flex flex-wrap gap-2">
- <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm">34 ученици</span>
- <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm">1 паралелка</span>
+ <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm">34 <?php echo \htmlentities(tr('programs.students'), ENT_QUOTES, 'UTF-8', false); ?></span>
+ <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm">1 <?php echo \htmlentities(tr('programs.classes'), ENT_QUOTES, 'UTF-8', false); ?></span>
  </div>
  </div>
  </details>
@@ -272,13 +274,14 @@
 
  <!-- Угостителско-туристичка -->
  <div class="space-y-4">
- <h2 class="text-xl font-semibold text-onSurface border-b border-surfaceContainer pb-3">Угостителско-туристичка струка &mdash; 34 ученици, 1 паралелка</h2>
+ <h2 class="text-xl font-semibold text-onSurface border-b border-surfaceContainer pb-3"><?php echo \htmlentities(tr('programs.hospitality.title'), ENT_QUOTES, 'UTF-8', false); ?> &mdash; <?php echo \htmlentities(tr('programs.hospitality.subtitle'), ENT_QUOTES, 'UTF-8', false); ?></h2>
  
  <details class="border border-surfaceContainer group">
  <summary class="p-5 cursor-pointer flex items-center justify-between text-onSurface hover:bg-surfaceContainer/30 transition-colors">
  <span class="text-base font-medium flex items-center gap-2">
  <i class="ti ti-player-play text-onSurface/60"></i>
- Погледнете го видеото
+ <?php echo \htmlentities(tr('programs.watch_video'), ENT_QUOTES, 'UTF-8', false); ?>
+
  </span>
  <span class="text-onSurface/40 group-open:rotate-180 transition-transform text-sm">&darr;</span>
  </summary>
@@ -296,8 +299,8 @@
  <div class="flex flex-col gap-3 flex-grow">
  <span class="text-base font-medium">Келнер / Готвач</span>
  <div class="flex flex-wrap gap-2">
- <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm">3 години</span>
- <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-sm">Мин. 30 поени</span>
+ <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm"><?php echo \htmlentities(tr('programs.years', ['n' => '3']), ENT_QUOTES, 'UTF-8', false); ?></span>
+ <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-sm"><?php echo \htmlentities(tr('programs.min_points', ['points' => '30']), ENT_QUOTES, 'UTF-8', false); ?></span>
  </div>
  </div>
  <span class="text-onSurface/40 group-open:rotate-180 transition-transform text-sm">&darr;</span>
@@ -307,8 +310,8 @@
  Учениците кои ќе се запишат на образовниот профил келнер &ndash; готвач ќе се здобијат со знаење од областа на географијата, информатиката, математиката и од областа на останатите општообразовни предмети. Учениците се здобиваат и со стручно знаење од областа на хигиената, готварството, храната и пијалоците, психологијата, декорацијата во готварството, посложувањето. Учениците имаат и практична настава.
  </p>
  <div class="mt-4 flex flex-wrap gap-2">
- <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm">34 ученици</span>
- <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm">1 паралелка</span>
+ <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm">34 <?php echo \htmlentities(tr('programs.students'), ENT_QUOTES, 'UTF-8', false); ?></span>
+ <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surfaceContainer text-onSurface text-xs font-semibold rounded-sm">1 <?php echo \htmlentities(tr('programs.classes'), ENT_QUOTES, 'UTF-8', false); ?></span>
  </div>
  </div>
  </details>
