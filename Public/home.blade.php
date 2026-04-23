@@ -8,21 +8,19 @@
                     <h2 class="text-3xl md:text-4xl font-semibold text-onSurface leading-tight">
                         {{ tr('school.name') }} - {{ tr('school.city') }}
                     </h2>
-                    <p class="text-base text-onSurface/70 leading-relaxed max-w-md">
-                        Регионален центар за стручно образование и обука. Создаваме кадри кои го движат општеството напред преку практична настава и дуално образование.
-                    </p>
+                    <p class="text-base text-onSurface/70 leading-relaxed max-w-md">{{ tr('school.description') }}</p>
                     <div class="flex gap-4 pt-2">
                         <a href="/programs" class="inline-flex items-center px-6 py-2.5 bg-primary text-onPrimary text-sm font-medium rounded-sm hover:opacity-90 transition-opacity">
-                            Погледни струки
+                            {{ tr('home.view_programs') }}
                         </a>
                         <a href="/about" class="inline-flex items-center px-6 py-2.5 border border-surfaceContainer text-onSurface text-sm font-medium rounded-sm hover:bg-surfaceContainer transition-colors">
-                            За нас
+                            {{ tr('home.about_us') }}
                         </a>
                     </div>
                 </div>
                 
                 <div class="w-full">
-                    <img src="/assets/images/school_photo1.jpg" alt="Училишна зграда" class="w-full h-72 md:h-80 object-cover rounded-sm">
+                    <img src="/assets/images/school_photo1.jpg" alt="{{ tr('school.name') }}" class="w-full h-72 md:h-80 object-cover rounded-sm">
                 </div>
             </div>
         </div>
@@ -34,15 +32,15 @@
             <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
                 <div>
                     <p class="text-2xl font-semibold text-onSurface">60+</p>
-                    <p class="text-sm text-onSurface/50 mt-1">Години традиција</p>
+                    <p class="text-sm text-onSurface/50 mt-1">{{ tr('home.stats.years_tradition') }}</p>
                 </div>
                 <div>
                     <p class="text-2xl font-semibold text-onSurface">800</p>
-                    <p class="text-sm text-onSurface/50 mt-1">Ученици во 28 паралелки</p>
+                    <p class="text-sm text-onSurface/50 mt-1">{{ tr('home.stats.students_classes', ['n' => '28']) }}</p>
                 </div>
                 <div>
                     <p class="text-2xl font-semibold text-onSurface">10</p>
-                    <p class="text-sm text-onSurface/50 mt-1">Стручни профили</p>
+                    <p class="text-sm text-onSurface/50 mt-1">{{ tr('home.stats.profiles') }}</p>
                 </div>
             </div>
         </div>
@@ -52,41 +50,35 @@
     <section class="py-16 px-6 max-w-5xl mx-auto">
         <div class="flex items-end justify-between mb-10">
             <div>
-                <h2 class="text-xl font-semibold text-onSurface">Струки</h2>
-                <p class="text-sm text-onSurface/50 mt-1">Модерен пристап и практична настава.</p>
+                <h2 class="text-xl font-semibold text-onSurface">{{ tr('home.programs.title') }}</h2>
+                <p class="text-sm text-onSurface/50 mt-1">{{ tr('home.programs.subtitle') }}</p>
             </div>
             <a href="/programs" class="hidden md:flex items-center gap-1 text-sm text-primary hover:underline">
-                Види ги сите &rarr;
+                {{ tr('home.programs.view_all') }} &rarr;
             </a>
         </div>
         
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
             <a href="/programs" class="group flex flex-col bg-surface border border-surfaceContainer p-6 hover:border-primary/40 transition-colors">
-                <h3 class="text-base font-semibold text-onSurface mb-2">Електротехничка</h3>
-                <p class="text-sm text-onSurface/60 flex-grow mb-4 leading-relaxed">
-                    Електротехничар за компјутерска техника, енергетичар и телекомуникации.
-                </p>
-                <span class="text-xs text-primary">3 Профили</span>
+                <h3 class="text-base font-semibold text-onSurface mb-2">{{ tr('home.programs.electro.title') }}</h3>
+                <p class="text-sm text-onSurface/60 flex-grow mb-4 leading-relaxed">{{ tr('home.programs.electro.description') }}</p>
+                <span class="text-xs text-primary">{{ tr('home.programs.electro.profiles', ['n' => '3']) }}</span>
             </a>
 
             <a href="/programs" class="group flex flex-col bg-surface border border-surfaceContainer p-6 hover:border-primary/40 transition-colors">
-                <h3 class="text-base font-semibold text-onSurface mb-2">Машинска</h3>
-                <p class="text-sm text-onSurface/60 flex-grow mb-4 leading-relaxed">
-                    Техничар за компјутерско управување (CNC), мехатроника, заварување и машинство.
-                </p>
-                <span class="text-xs text-primary">6 Профили</span>
+                <h3 class="text-base font-semibold text-onSurface mb-2">{{ tr('home.programs.machine.title') }}</h3>
+                <p class="text-sm text-onSurface/60 flex-grow mb-4 leading-relaxed">{{ tr('home.programs.machine.description') }}</p>
+                <span class="text-xs text-primary">{{ tr('home.programs.machine.profiles', ['n' => '6']) }}</span>
             </a>
 
             <a href="/programs" class="group flex flex-col bg-surface border border-surfaceContainer p-6 hover:border-primary/40 transition-colors">
-                <h3 class="text-base font-semibold text-onSurface mb-2">Угостителска</h3>
-                <p class="text-sm text-onSurface/60 flex-grow mb-4 leading-relaxed">
-                    Врвно угостителство преку практика во реномирани објекти за Келнер-готвач.
-                </p>
-                <span class="text-xs text-primary">1 Профил</span>
+                <h3 class="text-base font-semibold text-onSurface mb-2">{{ tr('home.programs.hospitality.title') }}</h3>
+                <p class="text-sm text-onSurface/60 flex-grow mb-4 leading-relaxed">{{ tr('home.programs.hospitality.description') }}</p>
+                <span class="text-xs text-primary">{{ tr('home.programs.hospitality.profiles', ['n' => '1']) }}</span>
             </a>
         </div>
         <a href="/programs" class="md:hidden mt-6 flex items-center justify-center gap-1 text-sm text-primary">
-            Види ги сите &rarr;
+            {{ tr('home.programs.view_all') }} &rarr;
         </a>
     </section>
 
@@ -106,11 +98,11 @@
     <section class="border-t border-surfaceContainer py-16 px-6 max-w-5xl mx-auto">
         <div class="flex items-end justify-between mb-8">
             <div>
-                <h2 class="text-xl font-semibold text-onSurface">Новости</h2>
-                <p class="text-sm text-onSurface/50 mt-1">Од училиштето и активностите.</p>
+                <h2 class="text-xl font-semibold text-onSurface">{{ tr('home.news.title') }}</h2>
+                <p class="text-sm text-onSurface/50 mt-1">{{ tr('home.news.subtitle') }}</p>
             </div>
             <a href="/news" class="hidden md:flex items-center gap-1 text-sm text-primary hover:underline">
-                Сите новости &rarr;
+                {{ tr('home.news.view_all') }} &rarr;
             </a>
         </div>
         
@@ -133,15 +125,15 @@
             @endforeach
         </div>
         <a href="/news" class="md:hidden mt-6 flex items-center justify-center gap-1 text-sm text-primary">
-            Сите новости &rarr;
+            {{ tr('home.news.view_all') }} &rarr;
         </a>
     </section>
     @endif
 
     <!-- Partner Companies -->
     <section class="border-t border-surfaceContainer py-16 px-6 max-w-5xl mx-auto">
-        <h2 class="text-xl font-semibold text-onSurface">Партнерски компании</h2>
-        <p class="text-sm text-onSurface/50 mt-1 mb-8">Со кои соработуваме преку дуално образование.</p>
+        <h2 class="text-xl font-semibold text-onSurface">{{ tr('home.partners.title') }}</h2>
+        <p class="text-sm text-onSurface/50 mt-1 mb-8">{{ tr('home.partners.subtitle') }}</p>
         <div class="flex gap-8 overflow-x-auto pb-4">
             <div class="flex flex-col items-center gap-2 flex-shrink-0">
                 <img src="/assets/images/companies/tm_doo.png" alt="ТМ ДОО" class="h-16 w-auto object-contain">
@@ -182,17 +174,17 @@
                 <p class="text-sm text-onSurface/50 mt-1">{{ tr('gallery.subtitle') }}</p>
             </div>
             <a href="/gallery" class="hidden md:flex items-center gap-1 text-sm text-primary hover:underline">
-                Сите слики &rarr;
+                {{ tr('home.gallery.view_all') }} &rarr;
             </a>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <img src="/assets/images/school_photo1.jpg" alt="Училиште" class="w-full h-60 object-cover rounded-sm cursor-pointer" data-lightbox>
-            <img src="/assets/images/school_photo2.jpg" alt="Училиште" class="w-full h-60 object-cover rounded-sm cursor-pointer" data-lightbox>
-            <img src="/assets/images/classroom1.jpg" alt="Училница" class="w-full h-60 object-cover rounded-sm cursor-pointer" data-lightbox>
-            <img src="/assets/images/day_of_school1.jpg" alt="Денот во училиште" class="w-full h-60 object-cover rounded-sm cursor-pointer" data-lightbox>
+            <img src="/assets/images/school_photo1.jpg" alt="{{ tr('school.name') }}" class="w-full h-60 object-cover rounded-sm cursor-pointer" data-lightbox>
+            <img src="/assets/images/school_photo2.jpg" alt="{{ tr('school.name') }}" class="w-full h-60 object-cover rounded-sm cursor-pointer" data-lightbox>
+            <img src="/assets/images/classroom1.jpg" alt="{{ tr('school.name') }}" class="w-full h-60 object-cover rounded-sm cursor-pointer" data-lightbox>
+            <img src="/assets/images/day_of_school1.jpg" alt="{{ tr('school.name') }}" class="w-full h-60 object-cover rounded-sm cursor-pointer" data-lightbox>
         </div>
         <a href="/gallery" class="md:hidden mt-6 flex items-center justify-center gap-1 text-sm text-primary">
-            Сите слики &rarr;
+            {{ tr('home.gallery.view_all') }} &rarr;
         </a>
     </section>
 

@@ -5,13 +5,11 @@
                 <img src="/assets/images/logo.jpg" alt="Logo" class="h-7 w-auto rounded-sm object-contain">
                 <h3 class="text-base font-semibold text-onSurface">{{ tr('school.name') }}</h3>
             </div>
-            <p class="text-sm text-onSurface/60 max-w-xs leading-relaxed">
-                Регионален Центар за Стручно Образование и Обука со повеќе од 60 години традиција.
-            </p>
+            <p class="text-sm text-onSurface/60 max-w-xs leading-relaxed">{{ tr('school.description') }}</p>
         </div>
         
         <div>
-            <h4 class="text-xs font-semibold mb-3 text-onSurface uppercase tracking-wider">Навигација</h4>
+            <h4 class="text-xs font-semibold mb-3 text-onSurface uppercase tracking-wider">{{ tr('footer.navigation') }}</h4>
             <ul class="space-y-2 text-sm text-onSurface/60">
                 <li><a href="/about" class="hover:text-onSurface transition-colors">{{ tr('nav.about') }}</a></li>
                 <li><a href="/programs" class="hover:text-onSurface transition-colors">{{ tr('nav.programs') }}</a></li>
@@ -34,6 +32,6 @@
     
     <div class="max-w-5xl mx-auto pt-6 border-t border-surfaceContainer flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-onSurface/40">
         <p>&copy; {{ date("Y") }} {{ tr('school.name') }} - {{ tr('school.city') }}. {{ tr('footer.rights') }}</p>
-        <span>Изработена од <a href="https://tasev.me" target="_blank" rel="noopener noreferrer" class="hover:text-onSurface text-onSurface/60 transition-colors">Лука Тасев</a></span>
+        <span>{{ tr('footer.created_by') }} <a href="https://tasev.me" target="_blank" rel="noopener noreferrer" class="hover:text-onSurface text-onSurface/60 transition-colors">{{ tr('footer.author') }}</a></span>
     </div>
 </footer>
