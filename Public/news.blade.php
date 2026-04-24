@@ -33,7 +33,7 @@ $limit = 12;
 $offset = ($page - 1) * $limit;
 
 $stmt = $pdo->prepare("
-    SELECT id, slug, title, excerpt, content, date, category, source_url,
+    SELECT id, slug, title, excerpt, date, category,
            image_main, image_2, image_3, image_4, image_5
     FROM news
     ORDER BY date DESC, id DESC

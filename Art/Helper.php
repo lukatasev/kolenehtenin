@@ -1,9 +1,8 @@
 <?php
 
-// Arg Class - lets you do $arg->argname
 class Arg {}
 
-// Header Class - lets you do $header->headername
+#[AllowDynamicProperties]
 class Header {
     public function __construct(Array $array) {
         foreach($array as $i => $v) {
@@ -15,7 +14,7 @@ class Header {
     }
 }
 
-// Get Class - lets you do $get->getparameter
+#[AllowDynamicProperties]
 class Get {
     public function __construct(Array $array) {
         foreach($array as $i => $v) {
