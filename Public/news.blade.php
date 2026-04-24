@@ -78,7 +78,7 @@ $months = tr('months');
         <?php else: ?>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <?php foreach ($news as $article): ?>
-                    <div class="bg-surface border border-surfaceContainer overflow-hidden">
+                    <a href="/news/<?php echo htmlspecialchars($article["slug"]); ?>" class="bg-surface border border-surfaceContainer overflow-hidden hover:border-primary/30 transition-colors block">
                         <?php if (!empty($article["image_main"])): ?>
                             <img src="<?php echo htmlspecialchars($article["image_main"]); ?>" alt="<?php echo htmlspecialchars($article["title"]); ?>" class="w-full h-48 object-cover object-top">
                         <?php else: ?>
@@ -96,7 +96,7 @@ $months = tr('months');
                                 <span class="inline-block mt-3 text-xs text-onSurface/40 uppercase tracking-wider"><?php echo htmlspecialchars($article["category"]); ?></span>
                             <?php endif; ?>
                         </div>
-                    </div>
+                    </a>
                 <?php endforeach; ?>
             </div>
 

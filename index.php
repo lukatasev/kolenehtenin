@@ -9,6 +9,7 @@ $route->get("index", "home");
 $route->get("/home", "home");
 $route->get("/about", "about");
 $route->get("/programs", "programs");
+$route->get("/news/:slug", "news_detail");
 $route->get("/news", "news");
 $route->get("/contact", "contact");
 $route->get("/staff", "staff");

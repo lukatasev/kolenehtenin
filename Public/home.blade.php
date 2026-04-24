@@ -108,7 +108,7 @@
         
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
             @foreach($recentNews as $news)
-            <a href="/news?article={{ $news['slug'] }}" class="group flex flex-col bg-surface border border-surfaceContainer overflow-hidden hover:border-primary/40 transition-colors">
+            <a href="/news/{{ $news['slug'] }}" class="group flex flex-col bg-surface border border-surfaceContainer overflow-hidden hover:border-primary/40 transition-colors">
                 @if($news['image_main'])
                 <div class="w-full h-40 overflow-hidden">
                     <img src="{{ $news['image_main'] }}" alt="{{ $news['title'] }}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
